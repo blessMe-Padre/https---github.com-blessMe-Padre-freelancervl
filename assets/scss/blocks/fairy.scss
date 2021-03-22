@@ -1,0 +1,114 @@
+
+@font-face {
+    font-family: 'balqis';
+    src: url('../fonts/balqis.woff2') format('woff2'),
+        url('../fonts/balqis.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+}
+
+.page-section {
+    margin: 100px 0;
+}
+.title {
+    font-size: 96px;
+    line-height: 128px;
+    color: #e2ab3f;
+    font-family: 'balqis';
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.title span {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    display: block;
+    margin-top: -30px;
+    margin-left: 175px;
+}
+
+
+.fairy__inner {
+    position: relative;
+}
+.fairy__slider {
+    width: 50%;
+}
+.slick-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.slick-prev {
+    left: 0;
+    z-index: 5;
+}
+.slick-next {
+    right: 0;
+    z-index: 5;
+}
+
+
+.fairy__container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.fairy__body {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+.fairy__text{
+    padding: 10px 0;
+}
+.fairy__body-title {
+    color: #000000;
+}
+
+@media (max-width: 991px) {
+    .fairy__container{
+        position: static;
+    } 
+    .fairy__slider {
+        width: 100%;
+    }
+    .fairy__body {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .slick-btn {
+        display: none;
+    }
+    .fairy__item img {
+        height: 50vh;
+    }
+    .title {
+        font-size: 70px;
+        margin-bottom: 20px;
+    } 
+    .title span{
+        font-size: 20px;
+        margin-left: 30%;
+    }     
+}
