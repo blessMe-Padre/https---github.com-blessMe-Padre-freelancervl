@@ -1,12 +1,12 @@
 .form-section {
-	background: #606060;
+	background: #fff;
 	padding: 20px 10px;
 }
 .form {
-	background-color: #606060;
+	background-color: #fff;
 	max-width: 550px;
 	margin: 0px auto;
-	color: #fff;
+	color: #000;
 	padding: 30px 0;
 }
 
@@ -35,8 +35,8 @@
 }
 
 .form__title {
-	font-size: 40px;
-	font-weight: 700;
+	font-size: 38px;
+	font-weight: 30px;
 	margin: 0px 0px 30px 0px;
 }
 .form__item {
@@ -50,14 +50,14 @@
 .form__input {
 	height: 50px;
 	padding: 0px 20px;
-	border-radius: 5px;
 	width: 100%;
 	font-size: 18px;
 	transition: all 0.5s ease 0s;
+	border-bottom: 2px solid #C5AC2D;
 }
 
 .form__input:focus {
-	box-shadow: 0 0 15px #ECB84C;
+	box-shadow: 0 0 15px #C5AC2D;
 }
 .form__input._error {
 	box-shadow: 0 0 15px red;
@@ -108,15 +108,13 @@ textarea.form__input {
 	left: 4px;
 	width: 16px;
 	height: 16px;
-	background-color: #ECB84C;
+	background-color: #C5AC2D;
 	border-radius: 50%;
 	transform: scale(0);
 }
 
 
 
-.checkbox {
-}
 .checkbox._error .checkbox__label::before {
 	box-shadow: 0 0 15px red;
 }
@@ -134,6 +132,7 @@ textarea.form__input {
 	align-items: center;
 	position: relative;
 	cursor: pointer;
+
 }
 
 .checkbox__label::before {
@@ -144,6 +143,7 @@ textarea.form__input {
 	background-color: #fff;
 	border-radius: 4px;
 	margin: 0px 10px 0px 0px;
+	border: 1px solid #C5AC2D;
 }
 .checkbox__label::after {
 	transition: transform 0.5s ease 0s;
@@ -153,13 +153,13 @@ textarea.form__input {
 	position: absolute;
 	top: 4px;
 	left: 4px;
-	background-color: #ECB84C;
+	background-color: #C5AC2D;
 	border-radius: 4px;
 	transform: scale(0);
 }
 
 .checkbox__label a {
-	color: #7a956b;
+	color: #C5AC2D;
 }
 
 .form__button {
@@ -168,7 +168,7 @@ textarea.form__input {
 	justify-content: center;
 	align-items: center;
 	min-height: 60px;
-	background-color: #ECB84C;
+	background-color: #C5AC2D;
 	color: #fff;
 	font-size: 18px;
 	text-transform: uppercase;
@@ -176,13 +176,13 @@ textarea.form__input {
 	font-weight: 700;
 	cursor: pointer;
 	border-radius: 20px;
-	box-shadow: 0 5px 0 #161b13;
+	box-shadow: 0 3px 0 #161b13;
 	transition: background-color 0.5s ease 0s;
 	position: relative;
 	top: 0;
 }
 .form__button:hover {
-	background-color: #4f6146;
+	background-color: darken(#C5AC2D, 10%);
 }
 .form__button:active {
 	top: 3px;
