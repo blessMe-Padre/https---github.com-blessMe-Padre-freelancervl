@@ -1,0 +1,42 @@
+.start {
+    margin-top: 70px;
+    background: url('/assets/images/bloki.jpg') center / cover no-repeat fixed;
+}
+.start__inner {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px 20px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+}
+.start__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 38px;
+    margin-bottom: 40px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.start__title._active {
+    transform: translate(0px, 0);
+    opacity: 1;  
+}
+
+.start__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.5s;
+ }
+
+ .start__text._active {
+    transform: translate(0px, 0);
+    opacity: 1;  
+}
