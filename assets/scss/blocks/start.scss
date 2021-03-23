@@ -1,15 +1,21 @@
 .start {
-    margin-top: 70px;
-    background: url('/assets/images/bloki.jpg') center / cover no-repeat fixed;
-}
+    margin-top: 100px;
+    background: url('/assets/images/bloki.jpg') 0 0 / cover no-repeat fixed;
+ }
 .start__inner {
     min-height: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 30px 20px;
     color: #fff;
     text-shadow: 2px 2px 3px #000;
+
+    @media (max-width: 768px) {
+        min-height: 300px;
+        background: url('/assets/images/bloki.jpg') 0 0/cover no-repeat; 
+    }
 }
 .start__title {
     font-weight: 700;
@@ -20,6 +26,12 @@
     transform: translate(0px, 120%);
     opacity: 0;
     transition: all 0.8s ease 0s;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }    
 }
 .start__title._active {
     transform: translate(0px, 0);
@@ -34,6 +46,12 @@
     transform: translate(0px, 120%);
     opacity: 0;
     transition: all 0.8s ease 0.5s;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }      
  }
 
  .start__text._active {
