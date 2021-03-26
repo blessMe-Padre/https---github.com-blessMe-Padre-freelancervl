@@ -13,7 +13,6 @@ $('.alert').click(function () {
  при появлении модального окна
 )*/
 
-
-jQuery('a').on('click', function (e) {
-    e.preventDefault();
-});
+// jQuery('a').on('click', function (e) {
+//     e.preventDefault();
+// });

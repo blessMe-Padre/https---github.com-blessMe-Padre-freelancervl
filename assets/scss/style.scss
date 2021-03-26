@@ -10,13 +10,13 @@
 
 
 //<ОБОЛОЧКА>===========================================================================================================
-// .wrapper {
-// 	width: 100%;
-// 	min-height: 100%;
-// 	overflow: hidden;
-// 	&.loaded {
-// 	}
-// }
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	&.loaded {
+	}
+}
 //</ОБОЛОЧКА>===============================
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
@@ -44,12 +44,13 @@
 // ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ 
 
 @import "blocks/header";
+@import "blocks/start";
 @import "blocks/cars";
 @import "blocks/fairy";
+@import "blocks/team";
 @import "blocks/form";
 @import "blocks/up";
-@import "blocks/start";
-@import "blocks/team";
+@import "blocks/popup";
 // @import "blocks/footer";
 
 
