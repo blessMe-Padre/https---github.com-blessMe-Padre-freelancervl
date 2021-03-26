@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         }
+
         return error;
     }
     function formAddError(input) {
