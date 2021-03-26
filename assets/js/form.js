@@ -71,29 +71,4 @@ document.addEventListener('DOMContentLoaded', function () {
     function emailTest(input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
-
-
-
-    function uploadFile(file) {
-        // провераяем тип файла
-        if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
-            alert('Разрешены только изображения.');
-            formImage.value = '';
-            return;
-        }
-        // проверим размер файла (<2 Мб)
-        if (file.size > 2 * 1024 * 1024) {
-            alert('Файл должен быть менее 2 МБ.');
-            return;
-        }
-
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
-        };
-        reader.onerror = function (e) {
-            alert('Ошибка');
-        };
-        reader.readAsDataURL(file);
-    }
 });

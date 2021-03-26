@@ -1,7 +1,11 @@
 .start {
     margin-top: 80px;
     background: url('../images/bloki.jpg') 0 0 / cover no-repeat fixed;
- }
+    @media (max-width: 768px) {
+        min-height: 400px;
+        background: url('../images/bloki.jpg') center no-repeat;
+    }
+}
 .start__inner {
     min-height: 400px;
     width: 100%;
@@ -12,10 +16,7 @@
     color: #fff;
     text-shadow: 2px 2px 3px #000;
 
-    @media (max-width: 768px) {
-        min-height: 300px;
-        background: url('../images/bloki.jpg') 0 0/cover no-repeat; 
-    }
+
 }
 .start__title {
     font-weight: 700;
