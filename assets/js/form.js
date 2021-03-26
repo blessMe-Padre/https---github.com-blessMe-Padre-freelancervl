@@ -20,15 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             if (response.ok) {
                 let result = await response.json();
-                alert(result.message);
+                // alert(result.message);
+                swal("Поздравляю!", "Ваше письмо отправленно!", "success");
                 form.reset();
                 form.classList.remove('_sending');
             } else {
-                alert("Ошибка");
+                // alert("Ошибка");
+                swal("Ошибка", "Что-то пошло не так", "error");
                 form.classList.remove('_sending');
             }
         } else {
-            alert('Заполните обязательные поля');
+            swal("Ошибка", "Заполните обязательные поля", "error");
         }
 
     }
