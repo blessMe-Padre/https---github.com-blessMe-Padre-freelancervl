@@ -55,3 +55,20 @@
 .mavic__item.mavic__item--active .mavic__item-title::after {
     transform: rotate(180deg);
 }
+
+.map {
+    padding: 50px 50px;    
+    &__inner {
+        display: flex;
+    }
+
+    &__inner-yandex {
+        flex: 0 0 50%;
+    }
+
+    &__inner-google {
+        flex: 0 0 50%;
+    }
+}
+
+
