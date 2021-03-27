@@ -9,12 +9,12 @@
 }
 
 .page-section {
-    margin: 100px 0;
+    margin: 50px 0;
 }
 .title {
     font-size: 96px;
     line-height: 128px;
-    color: #e2ab3f;
+    color: $orange;
     font-family: 'balqis';
     font-weight: 300;
     margin-bottom: 50px;
@@ -23,7 +23,7 @@
 .title span {
     font-size: 24px;
     line-height: 28px;
-    color: #000;
+    color: #fff;
     display: block;
     margin-top: -30px;
     margin-left: 175px;
@@ -80,7 +80,8 @@
     padding: 10px 0;
 }
 .fairy__body-title {
-    color: #000000;
+    color: $orange;
+    font-size: 21px;
 }
 
 @media (max-width: 991px) {

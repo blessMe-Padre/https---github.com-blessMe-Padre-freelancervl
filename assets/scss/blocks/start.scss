@@ -1,5 +1,5 @@
 .start {
-    margin-top: 80px;
+    margin-top: 70px;
     background: url('../images/bloki.jpg') 0 0 / cover no-repeat fixed;
     @media (max-width: 768px) {
         min-height: 400px;
@@ -54,6 +54,8 @@
         margin-bottom: 10px;
     }      
  }
+
+
 
  .start__text._active {
     transform: translate(0px, 0);

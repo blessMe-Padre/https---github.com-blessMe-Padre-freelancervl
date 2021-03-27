@@ -1,5 +1,6 @@
 .cars {
     padding: 50px 0;
+    background-color: #fff;
 }
 .top__heading {
     display: flex;
@@ -39,7 +40,7 @@
 
 .aplication-btn {
     padding: 16px;
-    background: #C5AC2D;
+    background: $orange;
     font-family: Roboto Condensed;
     font-size: 16px;
     line-height: 19px;
@@ -50,9 +51,9 @@
 }
 
 .aplication-btn:hover {
-    color:#C5AC2D; 
+    color: $orange; 
     background: #fefefe;
-    border: 1px solid #C5AC2D;
+    border: 1px solid $orange;
 }
 .top__slider {
     width: 50%;
@@ -103,6 +104,7 @@
 }
 .top__item {
     border: 1px solid #1B1818;
+    color: #000;
     padding: 10px;
     width: 150px;
     height: 150px;

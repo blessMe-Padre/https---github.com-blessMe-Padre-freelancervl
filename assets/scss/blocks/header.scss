@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: #C5AC2D;    
+    background-color: $grey;    
 }
 .header__container {
     max-width: 1200px;
@@ -21,7 +21,7 @@
 .header__logo {
     z-index: 5;
     font-size: 24px;
-    color: #fff;
+    color: $orange;
     
 }
 
@@ -44,7 +44,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: darken(#C5AC2D, 10%);
+    background-color: darken($orange, 10%);
     padding: 15px 15px 15px 30px;
     min-width: 200px;
     border-radius: 3px;
@@ -179,7 +179,7 @@ body._touch .menu__arrow {
         top: 0;
         left: 0;
         height: 70px;
-        background-color: #C5AC2D;
+        background-color: $grey;
         z-index: 2;
     }
     .menu__list > li {
