@@ -4,13 +4,27 @@
             <a href="#header" class="popup__close close-popup">
                 <img src="assets/images/close.svg" alt="">
             </a>
-            <div class="popup__title">Это модальное окно №1</div>
-            <div class="popup__text">
-                Попап №2</a> ipsum dolor sit amet consectetur adipisicing elit.
-                Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam
-                dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur
-            </div>
+            <section class="form-section page_section_4">
+                <div class="form">
+                    <form action="#" id="form" class="form__body">
+                        <h1 class="form__title">Форма для связи</h1>
+                        <div class="form__item">
+                            <label for="formName" class="form__label">Имя*:</label>
+                            <input id="formName" type="text" name="name" class="form__input _req">
+                        </div>
+                        <div class="form__item">
+                            <label for="formEmail" class="form__label">E-mail*:</label>
+                            <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                        </div>
+
+                        <div class="form__item">
+                            <label for="formMessage" class="form__label">Сообщение:</label>
+                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                        </div>
+                        <button type="submit" class="form__button">Отправить</button>
+                    </form>
+                </div>
+            </section>
         </div>
     </div>
 </div>

@@ -1,12 +1,12 @@
 .form-section {
-	background: #fff;
+	background: $grey;
 	padding: 20px 10px;
 }
 .form {
-	background-color: #fff;
+	background-color: $grey;
 	max-width: 550px;
 	margin: 0px auto;
-	color: #000;
+	color: #fff;
 	padding: 30px 0;
 }
 
@@ -53,11 +53,11 @@
 	width: 100%;
 	font-size: 18px;
 	transition: all 0.5s ease 0s;
-	border-bottom: 2px solid #C5AC2D;
+	border-bottom: 2px solid $orange;
 }
 
 .form__input:focus {
-	box-shadow: 0 0 15px #C5AC2D;
+	box-shadow: 0 0 15px $orange;
 }
 .form__input._error {
 	box-shadow: 0 0 15px red;
@@ -140,10 +140,10 @@ textarea.form__input {
 	align-self: flex-start;
 	flex: 0 0 24px;
 	height: 24px;
-	background-color: #fff;
+	background-color: $grey;
 	border-radius: 4px;
 	margin: 0px 10px 0px 0px;
-	border: 1px solid #C5AC2D;
+	border: 1px solid $orange;
 }
 .checkbox__label::after {
 	transition: transform 0.5s ease 0s;
@@ -167,10 +167,10 @@ textarea.form__input {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 60px;
-	background-color: #C5AC2D;
+	min-height: 40px;
+	background-color: $orange;
 	color: #fff;
-	font-size: 18px;
+	font-size: 15px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 700;
@@ -182,7 +182,7 @@ textarea.form__input {
 	top: 0;
 }
 .form__button:hover {
-	background-color: darken(#C5AC2D, 10%);
+	background-color: darken($orange, 10%);
 }
 .form__button:active {
 	top: 3px;

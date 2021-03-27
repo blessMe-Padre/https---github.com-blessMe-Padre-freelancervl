@@ -40,14 +40,15 @@ body.lock {
 	transition: all 0.8s ease 0s;
 }
 .popup__content {
-	background-color: #C5AC2D;
-	color: #000;
+	background-color: $grey;
+	color: #fff;
 	max-width: 800px;
-	padding: 30px;
+	padding: 20px;
 	position: relative;
 	transition: all 0.8s ease 0s;
 	opacity: 0;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+	border: 1px solid $orange;
     border-radius: 5px;
 }
 
@@ -58,7 +59,7 @@ body.lock {
 	right: 10px;
 	top: 10px;
     text-decoration: none;
-    background-color: #C5AC2D;
+    background-color: $grey;
     transition: all 0.2s ease 0s;
 }
 .popup__close:hover {

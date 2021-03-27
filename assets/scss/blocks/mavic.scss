@@ -1,0 +1,57 @@
+.mavic {
+    padding: 50px 0;
+    background: url('../images/mavic/bg.png') center / cover no-repeat;
+
+    &__title {
+        font-size: 44px;
+        line-height: 53px;
+        margin-bottom: 30px;
+    }
+
+    &__items {
+        padding-bottom: 15px;
+    }
+
+    &__item {
+        max-width: 690px;
+    }
+
+    &__item-title {
+        background-color: rgba(#000, .3);
+        cursor: pointer;
+        padding: 20px 10px 24px 40px;
+        font-size: 21px;
+        line-height: 1.2;
+        color: rgba(#fff, .8);
+        position: relative;
+        &::after {
+            content: url('../images/mavic/vector.svg');
+            position: absolute;
+            width: 62px;
+            height: 67px;
+            background-color: #fff;
+            right: -63px;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__item-text {
+        padding: 20px 5px 75px 50px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;   
+        margin: 0; 
+        display: none;
+    }
+}
+
+.mavic__item.mavic__item--active .mavic__item-text {
+    display: block;
+}
+
+.mavic__item.mavic__item--active .mavic__item-title::after {
+    transform: rotate(180deg);
+}
