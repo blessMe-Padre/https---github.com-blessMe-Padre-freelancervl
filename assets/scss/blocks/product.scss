@@ -451,3 +451,33 @@
         display: block;
       }
       
+
+@media (max-width: 656px) {
+  .product {
+    padding: 50px 25px;
+  }
+  .product__content {
+      display: block;
+    }
+  .product__images {
+    margin-bottom: 20px;
+  }
+  .info-product__nav {
+    display: block;
+  }
+  .info-product__body {
+   padding: 10px 0px;
+}
+
+}
+
+@media (max-width: 420px) {
+  .product {
+    padding: 50px 5px;
+  }
+  .info-product__item {
+    cursor: pointer;
+    height: 34px;
+    padding: 0px 15px;
+  }
+}

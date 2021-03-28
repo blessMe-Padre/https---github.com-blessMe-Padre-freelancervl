@@ -58,3 +58,29 @@
 }
 
 
+@media (max-width: 970px) {
+    .mavic__item {
+        max-width: 70%;
+    }  
+    .mavic__item-title {
+        padding: 18px 8px 22px 38px;
+        font-size: 18px;
+    } 
+}
+
+@media (max-width: 666px) {
+    .mavic__item-title {
+        padding: 17px 8px 15px 10px;
+        font-size: 15px;
+        line-height: 1;
+    }  
+    .mavic__item-text {
+        padding: 20px 5px 30px 20px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+    }  
+}
+
+
+
