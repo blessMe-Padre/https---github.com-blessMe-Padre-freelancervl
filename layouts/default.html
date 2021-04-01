@@ -6,15 +6,16 @@
 </head>
 
 <body>
+
+    {{> header }}
+
     <div class="wrapper">
-        {{> header }}
+        <main class="main">
+            {{> body }}
 
-        {{> body }}
-
+            {{> popup }}
+        </main>
         {{> footer }}
-
-        {{> popup }}
-
     </div>
 
 
