@@ -73,7 +73,7 @@ if (menuLinks.length > 0) {
     }
 }
 
-//Меню бургер 
+//Меню бургер
 
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
@@ -85,3 +85,5 @@ if (iconMenu) {
         menuBody.classList.toggle('_active');
     });
 }
+
+
