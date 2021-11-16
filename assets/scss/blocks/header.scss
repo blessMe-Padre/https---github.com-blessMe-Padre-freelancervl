@@ -40,6 +40,9 @@
     @media (max-width: 920px) {
         font-size: 13px;
     }
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
 }
 .menu__link:hover {
     color:#E68A0C;
@@ -72,6 +75,7 @@
         display: flex;
         align-items: center;
     }
+
     .menu__list > li {
         padding: 10px 0;
     }
