@@ -1,0 +1,148 @@
+.page-header {
+    padding: 100px 0;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 70px;
+    @media (max-width: 768px) {
+        padding: 50px 0;
+    }
+    // .page-header__wrapper
+
+    &__wrapper {
+        padding-left: 60%;
+        @media (max-width: 768px) {
+            padding-left: 15px;
+        }
+    }
+
+    // .page-header__title
+
+    &__title {
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 50px;
+
+        transform: translate(0px, 60%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+
+        @media (max-width: 768px) {
+            margin-bottom: 25px;
+        }
+    }
+    &__title._active {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+
+    // .page-header__description
+
+    &__description {
+        transform: translate(0px, 100%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+    }
+    &__description._active {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+}
+
+.review {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 0  15px;
+
+    @media (max-width: 768px) {
+        display: flex;
+		flex-direction: column;
+	}
+    .review__description {
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    &__description {
+        width: 40%;
+    }
+
+    // .review__link-block
+
+    &__link-block {
+    }
+
+    // .review__title
+
+    &__title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    // .review__list
+
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    // .review__item
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    // .review__item-link
+
+    &__item-link {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    &__item-link:hover {
+        color: #E68A0C;
+    }
+
+    // .review__text-block
+
+    &__text-block {
+    }
+
+    // .review__recital
+
+    &__recital {
+    }
+
+    // .review__img
+
+    &__img {
+        width: 50%;
+        margin-top: -220px;
+        vertical-align: top;
+        transform: translate(0px, 10%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        @media (max-width: 768px) {
+            margin-top: 0;
+            width: 100%;
+        }
+    }
+
+    &__img._active {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+
+    &__img img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        @media (max-width: 768px) {
+            margin: 0 auto;
+        }
+    }
+}

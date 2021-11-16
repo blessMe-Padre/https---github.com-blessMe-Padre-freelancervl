@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: $grey;    
+    background-color: $grey;
 }
 .header__container {
     max-width: 1200px;
@@ -22,7 +22,7 @@
     z-index: 5;
     font-size: 24px;
     color: $orange;
-    
+
 }
 
 .menu__icon {
@@ -36,8 +36,13 @@
 .menu__link {
     color: #fff;
     font-size: 18px;
+    padding: 15px 0;
+    @media (max-width: 920px) {
+        font-size: 13px;
+    }
 }
 .menu__link:hover {
+    color:#E68A0C;
     text-decoration: underline;
 }
 .menu__sublist {
@@ -66,10 +71,10 @@
     .menu__list {
         display: flex;
         align-items: center;
-    } 
+    }
     .menu__list > li {
         padding: 10px 0;
-    }  
+    }
     .menu__sublist {
         transform: translate(0, 10%);
         opacity: 0;
@@ -146,7 +151,7 @@ body._touch .menu__arrow {
         transform: scale(1) translate(0px, -50%);
     }
     .menu__icon._active span{
-        transform: scale(0) translate(0px, -50%);   
+        transform: scale(0) translate(0px, -50%);
     }
     .menu__icon._active::before {
         top: 50%;
