@@ -1,5 +1,5 @@
 .page-header {
-    padding: 100px 0;
+    padding: 100px 0 35px 0;
     max-width: 960px;
     margin: 0 auto;
     margin-top: 70px;
@@ -11,7 +11,7 @@
     &__wrapper {
         padding-left: 60%;
         @media (max-width: 768px) {
-            padding-left: 15px;
+            padding: 0 15px;
         }
     }
 
@@ -20,7 +20,7 @@
     &__title {
         font-weight: bold;
         font-size: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
 
         transform: translate(0px, 60%);
         opacity: 0;
@@ -35,12 +35,19 @@
         opacity: 1;
     }
 
+    &__text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
     // .page-header__description
 
     &__description {
         transform: translate(0px, 100%);
         opacity: 0;
         transition: all 0.8s ease 0s;
+        margin-bottom: 20px;
+        line-height: 20px;
     }
     &__description._active {
         transform: translate(0px, 0);
@@ -80,7 +87,7 @@
 
     &__title {
         font-size: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     // .review__list
@@ -93,6 +100,7 @@
 
     &__item {
         margin-bottom: 20px;
+        line-height: 20px;
     }
 
     // .review__item-link
