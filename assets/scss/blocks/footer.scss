@@ -2,3 +2,42 @@
     min-height: 60px;
     background-color: #262526;
 }
+
+.social__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+  }
+
+  .svg-link-hover {
+    fill: none;
+    stroke: #fff;
+  }
+
+  .social__icon:hover .svg-link-hover {
+    stroke: #E68A00;
+  }
+
+  .social__icon--vkontakte svg {
+    width: 30px;
+    height: 22px;
+  }
+
+  .social__icon--email svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .social__icon--git svg {
+    width: 24px;
+    height: 33px;
+  }
