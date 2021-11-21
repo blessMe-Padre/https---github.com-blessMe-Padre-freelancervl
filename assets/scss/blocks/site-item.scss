@@ -87,7 +87,7 @@
 
     &__title {
         font-size: 25px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     // .review__list
@@ -101,6 +101,23 @@
     &__item {
         margin-bottom: 20px;
         line-height: 20px;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    &__item::before {
+        position: absolute;
+        content: " ";
+        top: 5px;
+        left: 0;
+        width: 5px;
+        height: 10px;
+        background: #E68A0C;
+    }
+
+    .review__item--static {
+        position: static;
+        padding-left: 0;
     }
 
     // .review__item-link
