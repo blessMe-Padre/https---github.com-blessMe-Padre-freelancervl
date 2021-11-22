@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: $grey;
+    background: linear-gradient(90deg, rgb(17, 12, 12) 18%, rgb(141, 82, 1) 100%);
 }
 .header__container {
     max-width: 1200px;
@@ -39,6 +39,7 @@
     padding: 15px 0;
     font-family: 'century gothic', arial, sans-serif;
     font-weight: 500;
+    position: relative;
     @media (max-width: 920px) {
         font-size: 13px;
     }
@@ -46,10 +47,23 @@
         font-size: 18px;
     }
 }
-.menu__link:hover {
-    color:#E68A0C;
-    text-decoration: underline;
+
+.menu__link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    transition: 0.5s;
 }
+
+.menu__link:hover::after {
+    left: 0;
+    width: 100%;
+}
+
 .menu__sublist {
     position: absolute;
     top: 100%;
