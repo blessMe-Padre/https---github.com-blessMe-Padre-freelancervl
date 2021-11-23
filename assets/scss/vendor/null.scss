@@ -22,6 +22,7 @@ html,
 body {
 	height: 100%;
 	min-width: $minwidth;
+	scroll-behavior: smooth;
 }
 body {
 	line-height: 1;
