@@ -22,7 +22,6 @@
     z-index: 5;
     font-size: 24px;
     color: $orange;
-
 }
 
 .menu__icon {
@@ -32,16 +31,18 @@
 .menu__list > li {
     position: relative;
     margin-left: 20px;
+    @media (max-width: 920px) {
+        margin-left: 13px;
+    }
 }
 .menu__link {
+    font-weight: 400;
     color: #fff;
     font-size: 20px;
     padding: 15px 0;
-    font-family: 'century gothic', arial, sans-serif;
-    font-weight: 500;
     position: relative;
     @media (max-width: 920px) {
-        font-size: 13px;
+        font-size: 15px;
     }
     @media (max-width: 769px) {
         font-size: 18px;

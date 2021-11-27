@@ -1,0 +1,17 @@
+  @font-face {
+    font-family: 'ubuntu';
+    src: url("../fonts/ubuntu.woff2") format("woff2"),
+         url("../fonts/ubuntu.woff") format("woff");
+          font-weight: 400;
+          font-style: normal;
+          font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'balqis';
+    src: url('../fonts/balqis.woff2') format('woff2'),
+        url('../fonts/balqis.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+}

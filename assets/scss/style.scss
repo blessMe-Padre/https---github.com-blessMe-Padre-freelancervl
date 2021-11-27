@@ -70,7 +70,9 @@
 
 // ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ
 
+@import "blocks/fonts";
 @import "blocks/header";
+@import "blocks/main-section";
 @import "blocks/start";
 @import "blocks/cars";
 @import "blocks/fairy";
@@ -96,4 +98,4 @@
 	width: 1px;
 	height: 1px;
 	margin: -1px;
-  }
+}

@@ -4,7 +4,8 @@
  добавить класс .alert к обьекту
  */
 
-$('.alert').click(function () {
+$('.alert').click(function (e) {
+    e.preventDefault();
     swal("Демо режим", "Ограниченный функционал", "error");
 })
 

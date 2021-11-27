@@ -1,0 +1,125 @@
+.header {
+
+    // .header__avatar
+
+    &__avatar {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        z-index: 5;
+    }
+
+    // .header__img
+
+    &__img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    &__img img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    // .header__text
+
+    &__text {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    // .header__name
+
+    &__name {
+        margin-bottom: 5px;
+    }
+
+    // .header__prof
+
+    &__prof {
+        font-size: 15px;
+        opacity: 0.5;
+    }
+}
+
+.main-section {
+    margin-top: 90px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    @media (max-width: 540px) {
+        padding-top: 50px;
+    }
+
+    // .main__img
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    &__img img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    // .main__title
+
+    &__title {
+        font-size: 72px;
+        line-height: 1;
+        margin-bottom: 20px;
+        @media (max-width: 540px) {
+            font-size: 64px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 420px) {
+            font-size: 46px;
+        }
+    }
+
+    // .main__sub-title
+
+    &__sub-title {
+        font-size: 36px;
+        margin-bottom: 100px;
+        @media (max-width: 540px) {
+            line-height: 1.2;
+        }
+        @media (max-width: 420px) {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+
+    // .main__links
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+        color: #ffffff;
+        @media (max-width: 540px) {
+            flex-direction: column;
+        }
+    }
+
+    // .main__link
+
+    &__link {
+        padding: 10px;
+        color: inherit;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    &__link:hover {
+        color: $orange;
+    }
+}
