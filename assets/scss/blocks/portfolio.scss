@@ -1,9 +1,8 @@
 .portfolio-bg {
     margin-top: 70px;
-    background: url('../images/portfolio/portfolio-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: none;
+    background-color: lighten(#262526, 10%);
+    min-height: 300px;
 }
 
 .portfolio {

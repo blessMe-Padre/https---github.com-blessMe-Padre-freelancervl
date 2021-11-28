@@ -49,7 +49,8 @@
     transform: translateY(100px);
 }
 
-.skills__inner .skills-card:hover .face.face1{
+.skills__inner .skills-card:hover .face.face1,
+.skills__inner .skills-card:focus .face.face1{
     background: #E68A00;
     transform: translateY(0);
 }
@@ -58,7 +59,8 @@
     transition: 0.5s;
 }
 
-.skills__inner .skills-card:hover .face.face1 .content{
+.skills__inner .skills-card:hover .face.face1 .content,
+.skills__inner .skills-card:focus .face.face1 .content{
     opacity: 1;
 }
 
@@ -82,7 +84,8 @@
     transform: translateY(-100px);
 }
 
-.skills__inner .skills-card:hover .face.face2{
+.skills__inner .skills-card:hover .face.face2,
+.skills__inner .skills-card:focus .face.face2{
     transform: translateY(0);
 }
 
@@ -104,6 +107,6 @@
 }
 
 .skills__inner .skills-card .face.face2 .content a:hover{
-    background: #333;
-    color: #fff;
+    background: #E68A00;
+    color: #ffffff;
 }

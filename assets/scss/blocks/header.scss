@@ -76,13 +76,20 @@
 }
 .menu__sublist >li {
     margin-bottom: 10px;
+    font-size: 20px;
 }
 .menu__sublist >li:last-child {
     margin-bottom: 0;
 }
 .menu__sub-link {
+    display: block;
     color:#fff;
 }
+
+.menu__sub-link:hover {
+    color:darken($orange, 30%);
+}
+
 .menu__arrow {
     display: none;
 }
