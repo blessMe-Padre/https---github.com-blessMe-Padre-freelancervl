@@ -70,24 +70,26 @@
     top: 100%;
     right: 0;
     background-color: darken($orange, 10%);
-    padding: 15px 15px 15px 30px;
-    min-width: 200px;
+    min-width: 250px;
     border-radius: 3px;
 }
 .menu__sublist >li {
+    display: block;
+    padding: 10px 15px 10px 15px;
     margin-bottom: 10px;
     font-size: 20px;
 }
+
+.menu__sublist >li:hover {
+    background-color: lighten($orange, 5%);
+}
+
 .menu__sublist >li:last-child {
     margin-bottom: 0;
 }
 .menu__sub-link {
     display: block;
     color:#fff;
-}
-
-.menu__sub-link:hover {
-    color:darken($orange, 30%);
 }
 
 .menu__arrow {
