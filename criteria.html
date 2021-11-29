@@ -27,36 +27,135 @@ title: Критерии кода
         <div class="criteria-body__block _tabs-block _active">
             <div class="criteria-body__items">
                 <div class="criteria-body__item">
-                    <h2 class="criteria-body__item-title">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?</h2>
-                    <div class="criteria-body__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                        consectetur necessitatibus repellendus nihil. Voluptatibus cupiditate quisquam iste, dolores
-                        quas aliquid atque et in reiciendis voluptate obcaecati quo libero fugiat animi! Optio odit
-                        commodi assumenda, aliquid porro in. Possimus, quibusdam praesentium.</div>
+                    <h2 class="criteria-body__item-title">Код соответствует техническому заданию проекта.</h2>
+                    <p class="criteria-body__item-text">Все обязательные пункты технического задания выполнены.
+                        Выполнена HTML-разметка всех страниц проекта и всех элементов на этих страницах.</p>
                 </div>
                 <div class="criteria-body__item">
-                    <h2 class="criteria-body__item-title">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?</h2>
-                    <div class="criteria-body__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                        consectetur necessitatibus repellendus nihil. Voluptatibus cupiditate quisquam iste, dolores
-                        quas aliquid atque et in reiciendis voluptate obcaecati quo libero fugiat animi! Optio odit
-                        commodi assumenda, aliquid porro in. Possimus, quibusdam praesentium.</div>
+                    <h2 class="criteria-body__item-title">Отсутствует дублирование кода</h2>
+                    <p class="criteria-body__item-text">В разметке отсутствует дублирование кода для одного и того же
+                        элемента, с помощью которого элемент отображается в разных местах страницы на разных версиях:
+                        мобильной, десктопной, планшетной. Этот критерий не касается элементов, которые скрываются или
+                        показываются в разных версиях. В разметке должно быть использовано минимально возможное
+                        количество элементов. Не должно быть лишних обёрток и блоков, которые используются для
+                        оформления и могут быть заменены на псевдоэлементы.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Отсутствуют типовые ошибки в разметке по методологии.</h2>
+                    <p class="criteria-body__item-text">Отсутствуют следующие ошибки методологии БЭМ: создание
+                        элемента без родительского блока, создание элемента для элемента. </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Вёрстка проходит тест на переполнение контентом.
+                    </h2>
+                    <p class="criteria-body__item-text">Вёрстка не ломается при добавлении в элементы большего
+                        количества текста, при использовании картинок с неподходящими размерами, не ломается при
+                        изменении количества потоковых блоков: текст не выпадает из блоков, нижерасположенные блоки не
+                        скрываются, смещение блоков в потоке сохраняет логику потока (не приводит к нарушению сетки).
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Раскладка блоков на странице сделана на флексах и гридах</h2>
+                    <p class="criteria-body__item-text">Гриды используются для основных структурных блоков страницы
+                        (шапка, главный контент, подвал) и для создания колонок в контенте страниц. Для остальной
+                        раскладки используются флексы: навигация, карточки, пагинация, хлебные крошки и другие.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Подключены правильные шрифты.</h2>
+                    <p class="criteria-body__item-text">Необходимо, чтобы в проекте использовались именно те шрифты,
+                        которые указаны в макете. При этом их размеры, цвета, и жирность должны быть равны
+                        соответствующим параметрам в макетах и техническом задании.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Нестандартные шрифты подключены локально.</h2>
+                    <p class="criteria-body__item-text">Все нестандартные шрифты должны быть подключены в CSS из папки
+                        fonts с помощью правила @font-face. Подключаемые шрифты должны быть в форматах woff2 и woff.
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Выполнена ретинизация растровой графики.</h2>
+                    <p class="criteria-body__item-text">Графика должна быть подготовлена как минимум для двух
+                        вариантов экранов: с обычной и двойной плотностью пикселей.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Использованы изображения в формате WebP.</h2>
+                    <p class="criteria-body__item-text">Для браузеров, поддерживающих формат WebP, контентные
+                        изображения подключаются в этом формате. Для браузеров, не поддерживающих WebP, изображения
+                        подключаются в формате jpeg или png.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Кроссбраузерность.</h2>
+                    <p class="criteria-body__item-text">Вёрстка идентично отображается в последних версиях браузеров
+                        Chrome, Firefox, Safari. При проверке этого критерия необходимо смотреть на размеры и
+                        расположение блоков, внешнее сходство с макетом. Проверять работу анимации, если такая имеется.
+                        Допускаются небольшие отличия в отображениях шрифтов.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Отсутствуе транслита </h2>
+                    <p class="criteria-body__item-text">Отсутствует транслит в названиях классов, атрибутах,
+                        переменных CSS-препроцессора, названиях примесей и так далее. Для названий необходимо
+                        использовать английские слова и термины.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Вложенность селекторов не больше двух уровней.</h2>
+                    <p class="criteria-body__item-text">Вложенность усложняет читаемость кода и делает код хрупким.
+                        Хорошим подходом считается вложенность не больше двух уровней. Вложенность считается по CSS на
+                        выходе.</p>
                 </div>
             </div>
         </div>
         <div class="criteria-body__block _tabs-block">
             <div class="criteria-body__items">
                 <div class="criteria-body__item">
-                    <h2 class="criteria-body__item-title">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?</h2>
-                    <div class="criteria-body__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                        consectetur necessitatibus repellendus nihil. Voluptatibus cupiditate quisquam iste, dolores
-                        quas aliquid atque et in reiciendis voluptate obcaecati quo libero fugiat animi! Optio odit
-                        commodi assumenda, aliquid porro in. Possimus, quibusdam praesentium.</div>
+                    <h2 class="criteria-body__item-title">При выполнении кода не возникает необработанных ошибок.</h2>
+                    <p class="criteria-body__item-text">При открытии диалогов, загрузки данных и работе с сайтом не
+                        возникает ошибок, программа не ломается и не зависает.</p>
                 </div>
                 <div class="criteria-body__item">
-                    <h2 class="criteria-body__item-title">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?</h2>
-                    <div class="criteria-body__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                        consectetur necessitatibus repellendus nihil. Voluptatibus cupiditate quisquam iste, dolores
-                        quas aliquid atque et in reiciendis voluptate obcaecati quo libero fugiat animi! Optio odit
-                        commodi assumenda, aliquid porro in. Possimus, quibusdam praesentium.</div>
+                    <h2 class="criteria-body__item-title">Используются обязательные блоки кода.</h2>
+                    <p class="criteria-body__item-text">В любых конструкциях, где подразумевается использование блока
+                        кода (фигурных скобок) — вроде for, while, if и switch — блок кода используется обязательно,
+                        даже если инструкция состоит из одной строчки.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">В коде нет заранее недостижимых участков кода.</h2>
+                    <p class="criteria-body__item-text">Например: неиспользуемый код, невыполнимые условия, или
+                        операции после выхода из функции.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Константы нигде в коде не переопределяются.</h2>
+                    <p class="criteria-body__item-text">Константы используются только для чтения, и никогда не
+                        переопределяются на всем промежутке жизни программы.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Код является кроссбраузерным.</h2>
+                    <p class="criteria-body__item-text">Код является кроссбраузерным и не вызывает ошибок в разных
+                        браузерах и разных операционных системах. При проверке этого критерия, необходимо удостовериться
+                        в правильной работе и отсутствии сообщений об ошибках в выполняемых скриптах в последних
+                        версиях браузеров: Chrome, Firefox, Safari, Microsoft Edge (на движке Blink).</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Обработчики событий добавляются и удаляются своевременно.</h2>
+                    <p class="criteria-body__item-text">Обработчики событий для виджетов добавляются только в момент
+                        появления виджета на странице и удаляются в момент их исчезновения. Количество обработчиков,
+                        подвешенных на глобальную область видимости, не должно возрастать.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Для вставки пользовательских строк использован textContent.
+                    </h2>
+                    <p class="criteria-body__item-text">Для защита от XSS-атак, а также изменения исходных данных,
+                        запутывание пользователя и прочее.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title"> Отсутствуют лишние приведения и проверки типов.</h2>
+                    <p class="criteria-body__item-text">Если заранее известно, что в переменной число, то нет смысла
+                        превращать переменную в число parseInt(myNumber). Тоже касается и избыточной проверки булевой
+                        переменной.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Минимальное обращение к элементам.</h2>
+                    <p class="criteria-body__item-text">Поиск элементов по селекторам делается минимальное количество
+                        раз, после этого ссылки на элементы сохраняются.</p>
                 </div>
             </div>
         </div>
