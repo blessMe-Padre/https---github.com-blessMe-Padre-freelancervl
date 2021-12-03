@@ -7,7 +7,7 @@
 
 .portfolio {
     padding-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     // .portfolio__list
 
@@ -30,10 +30,14 @@
     // .portfolio__item
 
     &__item {
-        display: block;
+        display: none;
         min-height: 492px;
         width: 100%;
         background: linear-gradient(to bottom, rgba(178,178,178,1) 0%,rgba(53,47,47,.3) 100%);
+    }
+
+    &__item--visible {
+        display: block;
     }
 }
 
@@ -108,4 +112,26 @@
 
 .portfolio-card__link:focus .portfolio-card__description {
     opacity: 1;
+}
+
+.load-more {
+    text-align: center;
+}
+
+.load-more__btn {
+    position: relative;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all 0.2s ease-in;
+    &:hover,
+    &:focus {
+        background-color: $orange;
+        color: #ffffff;
+    }
+    &:active {
+        top: 2px;
+        box-shadow: 0 2px 0 darken($orange, 30%);
+    }
 }
