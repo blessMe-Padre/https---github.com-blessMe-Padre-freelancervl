@@ -23,17 +23,20 @@ hideMoreItems(portfolioItemsVisible);
 
 
 //если длина portfolio__item--visible  больше 8 удаляет кнопку loadMoreBtn
-loadMoreBtn.addEventListener('click', () => {
-    portfolioItems.forEach(el => {
-        el.classList.remove('portfolio__item--visible');
-        el.style.display = 'block';
-    });
-    if (portfolioItemsVisible.length <= 8) {
-        loadMoreBtn.style.display = 'inline-flex';
-    } else {
-        loadMoreBtn.style.display = 'none';
-    }
-});
+if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+        portfolioItems.forEach(el => {
+            el.classList.remove('portfolio__item--visible');
+            el.style.display = 'block';
+        });
+        if (portfolioItemsVisible.length <= 8) {
+            loadMoreBtn.style.display = 'inline-flex';
+        } else {
+            loadMoreBtn.style.display = 'none';
+        }
+    }, { once: true });
+}
+
 
 
 
