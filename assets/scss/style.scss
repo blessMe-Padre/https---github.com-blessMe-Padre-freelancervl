@@ -10,6 +10,14 @@
 
 /*================================================================*/
 
+// паттерн visually-hidden
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
 
 
 //<ОБОЛОЧКА>===========================================================================================================
@@ -88,17 +96,8 @@
 @import "blocks/popup";
 @import "blocks/pagination";
 @import "blocks/portfolio";
+@import "blocks/load-more";
 @import "blocks/site-item";
 @import "blocks/criteria";
 @import "blocks/footer";
 // @import "blocks/footer";
-
-
-// паттерн visually-hidden
-.visually-hidden {
-	position: absolute;
-	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-}

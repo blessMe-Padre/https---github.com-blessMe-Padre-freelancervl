@@ -104,6 +104,9 @@
     color: #333;
     padding: 5px;
     border: 1px solid #333;
+    @media (max-width: 636px) {
+        display: none;
+    }
 }
 
 .skills__inner .skills-card .face.face2 .content a:hover{

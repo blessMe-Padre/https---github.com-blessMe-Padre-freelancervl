@@ -113,25 +113,3 @@
 .portfolio-card__link:focus .portfolio-card__description {
     opacity: 1;
 }
-
-.load-more {
-    text-align: center;
-}
-
-.load-more__btn {
-    position: relative;
-    font-size: 25px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    transition: all 0.2s ease-in;
-    &:hover,
-    &:focus {
-        background-color: $orange;
-        color: #ffffff;
-    }
-    &:active {
-        top: 2px;
-        box-shadow: 0 2px 0 darken($orange, 30%);
-    }
-}
