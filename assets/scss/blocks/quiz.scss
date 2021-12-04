@@ -1,0 +1,106 @@
+.quiz {
+    min-height: 600px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+
+    &__question {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    &__answer {
+        margin-bottom: 30px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    &__answer-variant {
+        list-style: none;
+        margin-bottom: 15px;
+    }
+
+    &__result {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__result-text {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__result-button {
+        display: block;
+        padding-bottom: 30px;
+        text-align: center;
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+        width: 250px;
+        cursor: pointer;
+        background-color: inherit;
+        color: #fff;
+        transition: all 0.3s;
+        position: relative;
+        font-size: 20px;
+    }
+
+    &__result-button span {
+        font-size: 20px;
+        transition: all 0.3s;
+    }
+
+    &__result-button::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.3s;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-top-color: rgba(rgb(230,138,0),0.5);
+        border-bottom-color: rgba(rgb(230,138,0),0.5);
+        transform: scale(0.1, 1);
+    }
+
+    &__result-button:hover span {
+        letter-spacing: 2px;
+    }
+
+    &__result-button:hover::before {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    &__result-button::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.3s;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    &__result-button:hover::after {
+        opacity: 0;
+        transform: scale(0.1, 1);
+    }
+}
