@@ -31,6 +31,15 @@ title: FAQ
         <div class="criteria-body__block _tabs-block _active">
             <div class="criteria-body__items">
                 <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Что такое HTML</h2>
+                    <p class="criteria-body__item-text">HTML (от англ. HyperText Markup Language — «язык гипертекстовой
+                        разметки») — стандартизированный язык разметки документов для просмотра веб-страниц в браузере.
+                        Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS или открывают с
+                        локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране
+                        монитора.
+                    </p>
+                </div>
+                <div class="criteria-body__item">
                     <h2 class="criteria-body__item-title">Типы полей ввода (HTML input)</h2>
                     <p class="criteria-body__item-text">
                         input type="text" <br>
@@ -158,25 +167,56 @@ title: FAQ
         <div class="criteria-body__block _tabs-block">
             <div class="criteria-body__items">
                 <div class="criteria-body__item">
-                    <h2 class="criteria-body__item-title">При выполнении кода не возникает необработанных ошибок.</h2>
-                    <p class="criteria-body__item-text">При открытии диалогов, загрузки данных и работе с сайтом не
-                        возникает ошибок, программа не ломается и не зависает.</p>
+                    <h2 class="criteria-body__item-title">Типы данных в JS</h2>
+                    <p class="criteria-body__item-text">
+                        typeof строка 'str' - 'string' <br>
+                        typeof число '0' - 'number' <br>
+                        typeof булево 'true' - 'boolean' <br>
+                        typeof бигинт '1n' - 'bigint' <br>
+                        typeof символ 'Symbol()' - 'symbol' <br>
+                        typeof объект '{} []' - 'object' <br>
+                        typeof null - 'object' <br>
+                        object undefined - 'undefined'
+                    </p>
                 </div>
                 <div class="criteria-body__item">
-                    <h2 class="criteria-body__item-title">Используются обязательные блоки кода.</h2>
-                    <p class="criteria-body__item-text">В любых конструкциях, где подразумевается использование блока
-                        кода (фигурных скобок) — вроде for, while, if и switch — блок кода используется обязательно,
-                        даже если инструкция состоит из одной строчки.</p>
+                    <h2 class="criteria-body__item-title">Разница между == и ===</h2>
+                    <p class="criteria-body__item-text">
+                        <code>
+                            1 == '1' // true сравнивает значения<br>
+                            1 === '1' // false сравнивает еще и их типы
+                        </code>
+                    </p>
                 </div>
                 <div class="criteria-body__item">
-                    <h2 class="criteria-body__item-title">В коде нет заранее недостижимых участков кода.</h2>
-                    <p class="criteria-body__item-text">Например: неиспользуемый код, невыполнимые условия, или
-                        операции после выхода из функции.</p>
+                    <h2 class="criteria-body__item-title">Что такое strict mode</h2>
+                    <p class="criteria-body__item-text">Строгий режим принёс ряд изменений в обычную семантику
+                        JavaScript. Во-первых, строгий режим заменяет исключениями некоторые ошибки, которые
+                        интерпретатор JavaScript ранее молча пропускал. Во-вторых, строгий режим исправляет ошибки,
+                        которые мешали движкам JavaScript выполнять оптимизацию -- в некоторых случаях код в строгом
+                        режиме может быть оптимизирован для более быстрого выполнения, чем код в обычном режиме.
+                        В-третьих, строгий режим запрещает использовать некоторые элементы синтаксиса, которые,
+                        вероятно, в следующих версиях ECMAScript получат особый смысл.</p>
                 </div>
                 <div class="criteria-body__item">
-                    <h2 class="criteria-body__item-title">Константы нигде в коде не переопределяются.</h2>
-                    <p class="criteria-body__item-text">Константы используются только для чтения, и никогда не
-                        переопределяются на всем промежутке жизни программы.</p>
+                    <h2 class="criteria-body__item-title">function declaration и function expression</h2>
+                    <p class="criteria-body__item-text">
+                        Function Declaration – функция, объявленная в основном потоке кода. Создается интерпретатором до
+                        выполнения кода. Т.е. функцию можно вызвать до ее объявления. Происходит это блпгодаря хойстингу
+                        (всплытию)
+                        <code>
+                            function sum (a, b) {<br>
+                                return a + b;<br>
+                            }
+                        </code>
+                        function expression (функциональное выражение) - объявление функции в контексте какого-либо
+                        присваивания
+                        <code>
+                            const myFunction = function() {<br>
+                                statements<br>
+                            };
+                        </code>
+                    </p>
                 </div>
                 <div class="criteria-body__item">
                     <h2 class="criteria-body__item-title">Код является кросс-браузерным.</h2>
@@ -230,15 +270,6 @@ title: FAQ
                         <code>
                             &lt;div&gt; data-descriptions &lt;/div&gt;
                         </code>
-                    </p>
-                </div>
-                <div class="criteria-body__item">
-                    <h2 class="criteria-body__item-title">Что такое HTML</h2>
-                    <p class="criteria-body__item-text">HTML (от англ. HyperText Markup Language — «язык гипертекстовой
-                        разметки») — стандартизированный язык разметки документов для просмотра веб-страниц в браузере.
-                        Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS или открывают с
-                        локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране
-                        монитора.
                     </p>
                 </div>
                 <div class="criteria-body__item">
