@@ -1,0 +1,263 @@
+---
+layout: layout-main
+title: FAQ
+---
+
+<section class="start portfolio-bg">
+    <div class="container">
+        <div class="start__inner portfolio-bg">
+
+            <h1 class="start__title _anim-items _anim-no-hide">
+                FAQ
+            </h1>
+            <p class="start__text _anim-items _anim-no-hide">
+                Теория. Много терминов, определений. И&nbsp;вообще вопросы, ответы на&nbsp;которые необходимо знать
+                и&nbsp;понимать. Своего рода такой мини учебник, к&nbsp;которому удобно обращаться в&nbsp;любой момент.
+                Для удобства все разбито на&nbsp;категории.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="criteria container _tabs">
+    <nav class="criteria__nav criteria-nav">
+        <button class="criteria-nav__item criteria-nav__item--faq _tabs-item _active">HTML</button>
+        <button class="criteria-nav__item criteria-nav__item--faq _tabs-item">Css</button>
+        <button class="criteria-nav__item criteria-nav__item--faq _tabs-item">JavaScript</button>
+        <button class="criteria-nav__item criteria-nav__item--faq _tabs-item">Общее</button>
+    </nav>
+    <div class="criteria__body criteria-body">
+        <!-- HTML -->
+        <div class="criteria-body__block _tabs-block _active">
+            <div class="criteria-body__items">
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Типы полей ввода (HTML input)</h2>
+                    <p class="criteria-body__item-text">
+                        input type="text" <br>
+                        input type="date"<br>
+                        input type="email"<br>
+                        input type="number"<br>
+                        input type="password"<br>
+                        input type="range"
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Что такое doctype</h2>
+                    <p class="criteria-body__item-text">doctype используется для указания типа документа. Чтобы браузер
+                        мог понять как ему интерпретировать страницу и в соответствиие с каким стандартом осуществлять
+                        парсинг документа и определять валидность тегов</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Что такое семантика</h2>
+                    <p class="criteria-body__item-text">Семантика - это использование правильных тегов описывающих
+                        содержимое контента внутри себя. Семантичный тег это тег который носит смысловое объяснение
+                        <code>
+                            &lt;header&gt;&lt;/header&gt;
+                            &lt;footer&gt;&lt;/footer&gt;
+                            &lt;aside&lt;/aside&gt;
+                            &lt;nav&lt;/nav&gt;
+                            &lt;p&gt;&lt;/p&gt;
+                            &lt;h1&gt;&lt;/h1&gt;
+                            &lt;ul&gt;&lt;/ul&gt;
+                        </code>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Css -->
+        <div class="criteria-body__block _tabs-block">
+            <div class="criteria-body__items">
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Свойство display</h2>
+                    <p class="criteria-body__item-text">None, block, inline, inline-block, flex, grid</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Keyframes</h2>
+                    <p class="criteria-body__item-text">Определяет ключевые кадры по которым будет работать анимация.
+                        Указывается начальная точка и конечная. <br><br>
+                        <code>
+                            @keyframes box {<br>
+                                from { left: 0; }<br>
+                                to { left: 300px; }<br>
+                               }
+                        </code>
+                        <code>
+                               @keyframes box {<br>
+                                50% { left: 0; }<br>
+                                90% { left: 300px; }<br>
+                               }
+                        </code>
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Свойство Position</h2>
+                    <p class="criteria-body__item-text">static - позиция по умолчанию <br> relative - элемент уже
+                        спозиционирован <br> absolute - элемент пропадает из общего потока<br> fixed - элемент пропадает
+                        из общего потока и закрепляется на экране, прокручивается вместе с ним <br> sticky</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">box-sizing: border-box</h2>
+                    <p class="criteria-body__item-text">Говорит браузеру учитывать любые границы и внутренние отступы в
+                        значениях, которые вы указываете в ширине и высоте элемента. Если вы выставите элементу ширину
+                        100 пикселей, то эти 100 пикселей будут включать в себя границы и внутренние отступы, а контент
+                        сожмётся, чтобы выделить для них место.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Каскадность CSS. Приоритеты стилей</h2>
+                    <p class="criteria-body__item-text">
+                        Каскадность CSS – это механизм, благодаря которому к элементу HTML-документа может применяться
+                        более чем одно правило CSS. Правила могут исходить из различных источников: из внешней и
+                        внутренней таблицы стилей, от механизма наследования, от родительских элементов, от классов и
+                        ID, от селектора тега, от атрибута style и т. д. Поскольку в этих случаях часто происходит
+                        конфликт стилей, была создана система приоритетов: в конечном итоге применяется тот стиль,
+                        который исходит от источника с более высоким приоритетом. <br><br>
+                        Вес селекторов: <br>
+                        Селектор тега: 1<br> Селектор класса: 10<br> Селектор ID: 100<br> Inline-стиль: 1000
+
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">БЭМ</h2>
+                    <p class="criteria-body__item-text">БЭМ (Блок, Элемент, Модификатор) — компонентный подход к
+                        веб-разработке. В его основе лежит принцип разделения интерфейса на независимые блоки.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title"> Из чего строится размер элемента?</h2>
+                    <p class="criteria-body__item-text">Размер элемента строится из высоты и ширины содержимого, рамки,
+                        и внешних и внутренних отступов.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Псевдоэлементы</h2>
+                    <p class="criteria-body__item-text">Псевдоэлемент в CSS — это ключевое слово, добавляемое к
+                        селектору, которое позволяет стилизовать определённую часть выбранного элемента. Например,
+                        псевдоэлемент ::first-line может быть использован для изменения шрифта первой строки абзаца.<br>
+                        ::after<br> ::before<br> ::placeholder<br> ::first-letter
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Псевдоклассы</h2>
+                    <p class="criteria-body__item-text">Псевдокласс в CSS — это ключевое слово, добавленное к селектору,
+                        которое определяет его особое состояние. Например, :hover может быть использован для изменения
+                        цвета кнопки при наведении курсора на неё.
+                        :active<br> :focus<br> :hover<br> :nth-child()<br> :disabled :target
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Псевдоэлементы</h2>
+                    <p class="criteria-body__item-text">Псевдоэлемент в CSS — это ключевое слово, добавляемое к
+                        селектору, которое позволяет стилизовать определённую часть выбранного элемента. Например,
+                        псевдоэлемент ::first-line может быть использован для изменения шрифта первой строки абзаца.<br>
+                        ::after<br> ::before<br> ::placeholder<br> ::first-letter
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="criteria-body__block _tabs-block">
+            <div class="criteria-body__items">
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">При выполнении кода не возникает необработанных ошибок.</h2>
+                    <p class="criteria-body__item-text">При открытии диалогов, загрузки данных и работе с сайтом не
+                        возникает ошибок, программа не ломается и не зависает.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Используются обязательные блоки кода.</h2>
+                    <p class="criteria-body__item-text">В любых конструкциях, где подразумевается использование блока
+                        кода (фигурных скобок) — вроде for, while, if и switch — блок кода используется обязательно,
+                        даже если инструкция состоит из одной строчки.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">В коде нет заранее недостижимых участков кода.</h2>
+                    <p class="criteria-body__item-text">Например: неиспользуемый код, невыполнимые условия, или
+                        операции после выхода из функции.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Константы нигде в коде не переопределяются.</h2>
+                    <p class="criteria-body__item-text">Константы используются только для чтения, и никогда не
+                        переопределяются на всем промежутке жизни программы.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Код является кросс-браузерным.</h2>
+                    <p class="criteria-body__item-text">Код является кросс-браузерным и не вызывает ошибок в разных
+                        браузерах и разных операционных системах. При проверке этого критерия, необходимо удостовериться
+                        в правильной работе и отсутствии сообщений об ошибках в выполняемых скриптах в последних
+                        версиях браузеров: Chrome, Firefox, Safari, Microsoft Edge (на движке Blink).</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Обработчики событий добавляются и удаляются своевременно.</h2>
+                    <p class="criteria-body__item-text">Обработчики событий для виджетов добавляются только в момент
+                        появления виджета на странице и удаляются в момент их исчезновения. Количество обработчиков,
+                        подвешенных на глобальную область видимости, не должно возрастать.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Для вставки пользовательских строк использован textContent.
+                    </h2>
+                    <p class="criteria-body__item-text">Для защита от XSS-атак, а также изменения исходных данных,
+                        запутывание пользователя и прочее.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title"> Отсутствуют лишние приведения и проверки типов.</h2>
+                    <p class="criteria-body__item-text">Если заранее известно, что в переменной число, то нет смысла
+                        превращать переменную в число parseInt(myNumber). Тоже касается и избыточной проверки булевой
+                        переменной.</p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Минимальное обращение к элементам.</h2>
+                    <p class="criteria-body__item-text">Поиск элементов по селекторам делается минимальное количество
+                        раз, после этого ссылки на элементы сохраняются.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Общее -->
+        <div class="criteria-body__block _tabs-block">
+            <div class="criteria-body__items">
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Как обрабатывает страницу браузер?</h2>
+                    <ul class="criteria-body__item-text">
+                        <li>Формируется DOM дерево</li>
+                        <li>Загружаются стили</li>
+                        <li>На основании DOM и CSS формируется дерево рендеринга</li>
+                        <li>Для каждого элемента рассчитывается положение на странице</li>
+                        <li>Отрисовка в браузере</li>
+                    </ul>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Для чего используются атрибуты DATA</h2>
+                    <p class="criteria-body__item-text">Они предназначены для хранения каких либо значений
+                        <code>
+                            &lt;div&gt; data-descriptions &lt;/div&gt;
+                        </code>
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Что такое HTML</h2>
+                    <p class="criteria-body__item-text">HTML (от англ. HyperText Markup Language — «язык гипертекстовой
+                        разметки») — стандартизированный язык разметки документов для просмотра веб-страниц в браузере.
+                        Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS или открывают с
+                        локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране
+                        монитора.
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Что такое API</h2>
+                    <p class="criteria-body__item-text">API (Application Programming Interface — программный интерфейс
+                        приложения, или интерфейс программирования приложений) — это специальный протокол для
+                        взаимодействия компьютерных программ, который позволяет использовать функции одного приложения
+                        внутри другого.
+                    </p>
+                </div>
+                <div class="criteria-body__item">
+                    <h2 class="criteria-body__item-title">Что такое DNS</h2>
+                    <p class="criteria-body__item-text">DNS (Domain Name System). DNS — это технология, которая
+                        позволяет браузеру найти запрошенный пользователем сайт по его имени. Основное предназначение
+                        DNS-серверов — хранение информации о доменах и ее предоставление по запросу пользователей, а
+                        также кэширование DNS-записей других серверов.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
