@@ -108,64 +108,67 @@ window.onload = function () {
         }
         document.querySelector(".quiz__answer").innerHTML = answer;
     }
-
-    quizSection.addEventListener('click', (evt) => {
-        evt.stopPropagation(); // ограничивает распространение события
-        if (evt.target.classList.contains('quiz__answer-variant') && step < quiz.length) {
-            if (result[evt.target.dataset.v] != undefined) {
-                result[evt.target.dataset.v]++;
+    if (quizSection) {
+        quizSection.addEventListener('click', (evt) => {
+            evt.stopPropagation(); // ограничивает распространение события
+            if (evt.target.classList.contains('quiz__answer-variant') && step < quiz.length) {
+                if (result[evt.target.dataset.v] != undefined) {
+                    result[evt.target.dataset.v]++;
+                }
+                else {
+                    result[evt.target.dataset.v] = 0;
+                }
+                step++;
+                if (step == quiz.length) {
+                    quizSection.querySelector('.quiz__question').remove();
+                    quizSection.querySelector('.quiz__answer').remove();
+                    showResult();
+                }
+                else {
+                    showQuestion(step);
+                }
             }
-            else {
-                result[evt.target.dataset.v] = 0;
-            }
-            step++;
-            if (step == quiz.length) {
-                quizSection.querySelector('.quiz__question').remove();
-                quizSection.querySelector('.quiz__answer').remove();
-                showResult();
-            }
-            else {
-                showQuestion(step);
-            }
-        }
-    });
-
-    // функция показывающая результат опроса
-    function showResult() {
-        let key = Object.keys(result).reduce(function (a, b) {
-            return result[a] > result[b] ? a : b;
         });
-        let div = document.createElement('div');
-        div.classList.add('quiz__result');
-        quizSection.appendChild(div);
+        // функция показывающая результат опроса
+        function showResult() {
+            let key = Object.keys(result).reduce(function (a, b) {
+                return result[a] > result[b] ? a : b;
+            });
+            let div = document.createElement('div');
+            div.classList.add('quiz__result');
+            quizSection.appendChild(div);
 
-        let p = document.createElement('p');
-        p.classList.add('quiz__result-text');
-        p.innerHTML = answers[key]['description'];
-        div.appendChild(p);
+            let p = document.createElement('p');
+            p.classList.add('quiz__result-text');
+            p.innerHTML = answers[key]['description'];
+            div.appendChild(p);
 
-        let button = document.createElement('button');
-        button.classList.add('quiz__result-button');
-        button.innerHTML = '<span>пройти снова</span>';
-        div.appendChild(button);
-        let restartButton = quizSection.querySelector('.quiz__result-button');
+            let button = document.createElement('button');
+            button.classList.add('quiz__result-button');
+            button.innerHTML = '<span>пройти снова</span>';
+            div.appendChild(button);
+            let restartButton = quizSection.querySelector('.quiz__result-button');
 
-        restartButton.addEventListener('click', () => {
-            quizSection.querySelector('.quiz__result').remove();
+            restartButton.addEventListener('click', () => {
+                quizSection.querySelector('.quiz__result').remove();
 
-            let div1 = document.createElement('div');
-            div1.classList.add('quiz__question');
-            quizSection.appendChild(div1);
+                let div1 = document.createElement('div');
+                div1.classList.add('quiz__question');
+                quizSection.appendChild(div1);
 
-            let div2 = document.createElement('div');
-            div2.classList.add('quiz__answer');
-            quizSection.appendChild(div2);
+                let div2 = document.createElement('div');
+                div2.classList.add('quiz__answer');
+                quizSection.appendChild(div2);
 
-            step = 0;
-            showQuestion(step);
-        })
+                step = 0;
+                showQuestion(step);
+            })
 
+        }
+
+        showQuestion(step);
     }
 
-    showQuestion(step);
+
+
 }

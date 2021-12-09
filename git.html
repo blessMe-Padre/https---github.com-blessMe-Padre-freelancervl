@@ -1,0 +1,51 @@
+---
+layout: layout-main
+title: GIT
+---
+
+<section class="start portfolio-bg">
+    <div class="container">
+        <div class="start__inner portfolio-bg">
+
+            <h1 class="start__title _anim-items _anim-no-hide">
+                Git
+            </h1>
+            <p class="start__text _anim-items _anim-no-hide">
+                Небольшой гайд по&nbsp;Git. Основные команды, инициализация репозитория и&nbsp;работа в&nbsp;терминале.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="git container">
+    <h2 class="git__subtitle">Создание <nobr>Git-репозитория</nobr>
+    </h2>
+    <p class="git__text">Обычно вы&nbsp;получаете репозиторий Git одним из&nbsp;двух способов:<br />
+        Вы&nbsp;можете взять локальный каталог, который в&nbsp;настоящее время не&nbsp;находится под версионным
+        контролем, и&nbsp;превратить его
+        в&nbsp;репозиторий Git, либо
+        Вы&nbsp;можете клонировать существующий репозиторий Git из&nbsp;любого местаВ&nbsp;обоих случаях
+        вы&nbsp;получите готовый к&nbsp;работе Git репозиторий на&nbsp;вашем компьютере.</p>
+    <p class="git__text">Создание репозитория в&nbsp;существующем каталоге: git init.</p>
+    <p class="git__text">
+        <code>git remote add NAMEgit@github.com</a>:blessMe-Padre/partials.git</code>
+    </p>
+    <p class="git__text">Эта команда привяжет удаленный репозиторий по&nbsp;адресу к&nbsp;ссылке в&nbsp;вашем локальном
+        репозитории. После
+        привязки<br />
+        удаленного репозитория в&nbsp;него можно будет отправлять локальные ветки с&nbsp;помощью команды push.
+    </p>
+    <h2 class="git__subtitle">Обновите <nobr>master-ветку</nobr> перед началом работы</h2>
+    <p class="git__text"># В&nbsp;вашей локальной копии переключитесь в&nbsp;ветку master<br />
+        <code>git checkout master</code>
+    </p>
+    <p class="git__text"># Заберите изменения из&nbsp;репозитория Академии&#185; (или academy)<br />
+        <code>git pull academy master</code>
+    </p>
+    <p class="git__text"># Отправьте изменения ветки master в&nbsp;ваш форк на&nbsp;Гитхабе (или origin)<br />
+        <code>git push origin master</code>
+    </p>
+    <p class="git__text"># Когда вы&nbsp;обновили master, создайте ветку для выполнения задания<br />
+        <code>git checkout -b <nobr>module8-task1</nobr></code>
+    </p>
+</section>
