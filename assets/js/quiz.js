@@ -168,7 +168,4 @@ window.onload = function () {
 
         showQuestion(step);
     }
-
-
-
 }

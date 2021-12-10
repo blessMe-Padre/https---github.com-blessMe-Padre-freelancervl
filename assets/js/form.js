@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (response.ok) {
                 let result = await response.json();
                 // alert(result.message);
-                swal("Поздравляю!", "Ваше письмо отправленно!", "success");
+                swal("Поздравляю!", "Ваше письмо отправлено!", "success");
                 form.reset();
                 form.classList.remove('_sending');
             } else {

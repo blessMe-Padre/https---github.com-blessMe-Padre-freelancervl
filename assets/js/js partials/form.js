@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let error = formValidate(form);
 
 		let formData = new FormData(form);
-		
+
 		if (error === 0) {
 			form.classList.add('_sending');
 			let response = await fetch('sendmail.php', {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	function uploadFile(file) {
-		// провераяем тип файла
+		// проверяем тип файла
 		if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
 			alert('Разрешены только изображения.');
 			formImage.value = '';

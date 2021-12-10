@@ -27,25 +27,41 @@ title: GIT
         Вы&nbsp;можете клонировать существующий репозиторий Git из&nbsp;любого местаВ&nbsp;обоих случаях
         вы&nbsp;получите готовый к&nbsp;работе Git репозиторий на&nbsp;вашем компьютере.</p>
     <p class="git__text">Создание репозитория в&nbsp;существующем каталоге: git init.</p>
-    <p class="git__text">
-        <code>git remote add NAMEgit@github.com</a>:blessMe-Padre/partials.git</code>
-    </p>
-    <p class="git__text">Эта команда привяжет удаленный репозиторий по&nbsp;адресу к&nbsp;ссылке в&nbsp;вашем локальном
+    <p class="git__text">Команда git remote привяжет удаленный репозиторий по&nbsp;адресу к&nbsp;ссылке в&nbsp;вашем
+        локальном
         репозитории. После
         привязки<br />
         удаленного репозитория в&nbsp;него можно будет отправлять локальные ветки с&nbsp;помощью команды push.
+        <code>git remote add NAME git@github.com:blessMe-Padre/partials.git</code>
     </p>
+
     <h2 class="git__subtitle">Обновите <nobr>master-ветку</nobr> перед началом работы</h2>
     <p class="git__text"># В&nbsp;вашей локальной копии переключитесь в&nbsp;ветку master<br />
         <code>git checkout master</code>
     </p>
-    <p class="git__text"># Заберите изменения из&nbsp;репозитория Академии&#185; (или academy)<br />
-        <code>git pull academy master</code>
+    <p class="git__text"># Заберите изменения из&nbsp; репозитория(или NAME)<br />
+        <code>git pull NAME master</code>
     </p>
     <p class="git__text"># Отправьте изменения ветки master в&nbsp;ваш форк на&nbsp;Гитхабе (или origin)<br />
         <code>git push origin master</code>
     </p>
     <p class="git__text"># Когда вы&nbsp;обновили master, создайте ветку для выполнения задания<br />
         <code>git checkout -b <nobr>module8-task1</nobr></code>
+    </p>
+    <p class="git__text"># Команда git status отображает состояние рабочего каталога и раздела проиндексированных
+        файлов. С ее помощью можно проверить индексацию изменений и увидеть файлы, которые не отслеживаются Git.
+        <code>git status</code>
+    </p>
+    <p class="git__text"># Команда git add добавляет содержимое рабочего каталога в индекс (staging area) для
+        последующего коммита.
+        <code>git add .</code>
+    </p>
+    <p class="git__text"># Команда git commit берёт все данные, добавленные в индекс с помощью git add , и сохраняет их
+        слепок во внутренней базе данных, а затем сдвигает указатель текущей ветки на этот слепок.
+        <code>git commit -am "текст комментария"</code>
+    </p>
+    <p class="git__text"># Команда push origin module1-task2 пушит активную ветку в форк, и создает пулреквест в
+        основной репозиторий
+        <code>git push origin module1-task2</code>
     </p>
 </section>
