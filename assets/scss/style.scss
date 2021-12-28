@@ -1,6 +1,7 @@
 /*Подключение файлов переменных миксинов обнуления*/
 @import "_var";
 @import "vendor/null";
+
 /*================================================================*/
 
 /*Подключение шрифтов*/
@@ -74,7 +75,7 @@
 	   object-fit: cover;
   }
 
-
+@import "blocks/mixin";
 @import "blocks/fonts";
 @import "blocks/header";
 @import "blocks/main-section";
@@ -88,6 +89,7 @@
 @import "blocks/meetteam";
 @import "blocks/fslightbox";
 @import "blocks/quiz";
+@import "blocks/block-slider";
 @import "blocks/form";
 @import "blocks/article";
 @import "blocks/faq";

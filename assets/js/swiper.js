@@ -18,9 +18,6 @@ if (quantityButtons.length > 0) {
     }
 }
 
-
-
-
 //BuildSlider
 let sliders = document.querySelectorAll('._swiper');
 if (sliders) {
@@ -181,7 +178,6 @@ if (document.querySelector('.brands-slider')) {
     });
 }
 
-
 if (document.querySelector('.images-product')) {
     let imagesSubSlider = new Swiper('.images-product__subslider', {
         observer: true,
@@ -211,7 +207,31 @@ if (document.querySelector('.images-product')) {
 
 }
 
-
+// слайдер на 3 странице блоков
+if (document.querySelector('.slider-main__body')) {
+    new Swiper('.slider-main__body', {
+        observer: true,
+        observeParents: true,
+        slidesPerView: 1,
+        spaceBetween: 32,
+        watchOverflow: true,
+        speed: 800,
+        loop: true,
+        loopAdditionalSlides: 5,
+        preloadImages: false,
+        parallax: true,
+        // Dotts
+        pagination: {
+            el: '.controls-slider-main__dotts',
+            clickable: true,
+        },
+        // Arrows
+        navigation: {
+            nextEl: '.slider-main .slider-arrow_next',
+            prevEl: '.slider-main .slider-arrow_prev',
+        }
+    });
+}
 
 
 
