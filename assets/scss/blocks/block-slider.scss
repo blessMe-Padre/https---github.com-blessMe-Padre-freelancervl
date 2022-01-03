@@ -60,12 +60,8 @@
 	@media (min-width: $md2) {
 		padding: 60px;
 		background: rgba(255, 255, 255, 0.9);
-		/* Если браузер поддерживает backdrop-filter */
-		@supports ((-webkit-backdrop-filter: blur(31px)) or (backdrop-filter: blur(31px))) {
-			background: rgba(255, 255, 255, 0.72);
-			backdrop-filter: blur(31px);
-		}
 	}
+
 	// .content-main__title
 	&__title {
 		@include adaptiv-value("font-size", 56, 24, 1);
@@ -224,6 +220,7 @@
 	grid-template-columns: repeat(2, 48px);
 	column-gap: 8px;
 }
+
 .slider-arrow {
 	pointer-events: auto;
 	border-radius: 50%;
