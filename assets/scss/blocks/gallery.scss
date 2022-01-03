@@ -1,5 +1,8 @@
 .gallery {
     padding: 80px 15px;
+    @media (max-width: 920px) {
+        padding: 50px 15px;
+    }
 
     // .gallery__buttons
 
@@ -23,7 +26,7 @@
         border-radius: 20px;
         margin: 0 15px;
         transition: all 0.3s linear;
-        margin-bottom: 30px;
+        @include adaptiv-value("margin-bottom", 30, 15, 1);
     }
 
     &__button:hover,
@@ -32,11 +35,6 @@
         background-color: $orange;
         border: 1px solid $orange;
         outline: none;
-    }
-
-    // .gallery__inner
-
-    &__inner {
     }
 
     // .gallery__items
