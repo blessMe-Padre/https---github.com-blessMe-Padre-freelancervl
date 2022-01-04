@@ -4,9 +4,10 @@
     // .fslightbox__title
 
     &__title {
-        font-size: 30px;
+        @include adaptiv-value("font-size", 50, 30, 1);
         line-height: 1.2;
         text-align: center;
+        padding: 0 15px;
         margin-bottom: 20px;
     }
 

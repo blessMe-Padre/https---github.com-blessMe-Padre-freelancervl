@@ -26,8 +26,8 @@
 .start__title {
     font-family: 'ubuntu', Arial, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
+    @include adaptiv-value("font-size", 48, 30, 1);
+    line-height: 1.2;
     margin-bottom: 20px;
 
     transform: translate(0px, 120%);
@@ -35,8 +35,6 @@
     transition: all 0.8s ease 0s;
 
     @media (max-width: 768px) {
-        font-size: 30px;
-        line-height: 1;
         margin-bottom: 20px;
     }
 }
