@@ -1,0 +1,119 @@
+.block-car {
+    padding: 80px 15px;
+
+    // .block-car__title
+
+    &__title {
+        text-align: center;
+        @include adaptiv-value("font-size", 46, 20, 1);
+        line-height: 1.2;
+        @include adaptiv-value("margin-bottom", 120, 0, 1);
+    }
+
+    // .block-car__images
+
+    &__images {
+        position: relative;
+    }
+
+    // .block-car__text
+
+    &__text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+.block-car__images-img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+    @media (max-width: $md3) {
+        height: 220px;
+    }
+}
+
+.car-dot {
+    width: 32px;
+	height: 32px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: rgba(235, 184, 76, 0.7);
+	cursor: pointer;
+
+    @media (max-width: $md3) {
+        display: none;
+    }
+
+    // .car-dot__text
+
+    &__text {
+        font-size: 14px;
+        line-height: 28px;
+        position: absolute;
+        white-space: nowrap;
+        top: -140px;
+        left: 150px;
+        display: none;
+    }
+}
+
+.car-dot::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #FFD600;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.car-dot::before {
+	content: "";
+	position: absolute;
+	background-image: url('/assets/images/cadillac/line.svg');
+	width: 244px;
+	height: 122px;
+	top: -113px;
+	left: 25px;
+	display: none;
+}
+
+.car-dot--1 {
+    top: 100px;
+    left: 150px;
+}
+.car-dot--2 {
+    top: 100px;
+    left: 500px;
+}
+.car-dot--3 {
+    top: 68px;
+    right: 302px;
+
+    @media (max-width: $md2) {
+        top: 132px;
+        right: 369px;
+    }
+}
+.car-dot--4 {
+    bottom: 40px;
+    right: 245px;
+
+    @media (max-width: $md2) {
+        bottom: 74px;
+        right: 146px;
+    }
+}
+
+.car-dot:hover::before,
+.car-dot:focus::before {
+	display: block;
+}
+
+.car-dot:hover .car-dot__text,
+.car-dot:focus .car-dot__text {
+	display: block;
+}

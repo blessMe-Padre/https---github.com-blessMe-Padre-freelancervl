@@ -21,3 +21,5 @@ $maxWidthContainer: 1200;
 		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
 	}
 }
+
+// @include adaptiv-value("font-size", 16, 13, 1);
