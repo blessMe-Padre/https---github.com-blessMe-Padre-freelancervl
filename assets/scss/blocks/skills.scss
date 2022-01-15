@@ -1,5 +1,6 @@
 .skills {
-    padding: 40px 0;
+    @include adaptiv-value("padding-top", 80, 40, 1);
+    @include adaptiv-value("padding-bottom", 80, 40, 1);
     background-color: lighten(#262526, 15%) ;
 }
 
@@ -11,7 +12,7 @@
 }
 
 .skills__title {
-    font-size: 36px;
+    @include adaptiv-value("font-size", 36, 22, 1);
     margin-bottom: 20px;
 }
 

@@ -14,6 +14,10 @@
 
     &__images {
         position: relative;
+        min-height: 350px;
+        @media (max-width: $md3) {
+            min-height: 220px;
+        }
     }
 
     // .block-car__text

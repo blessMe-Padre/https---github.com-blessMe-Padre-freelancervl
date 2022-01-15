@@ -227,8 +227,63 @@ if (document.querySelector('.slider-main__body')) {
         },
         // Arrows
         navigation: {
-            nextEl: '.slider-main .slider-arrow_next',
-            prevEl: '.slider-main .slider-arrow_prev',
+            nextEl: '.slider-arrow_next',
+            prevEl: '.slider-arrow_prev',
+        }
+    });
+}
+
+// слайдер на главной странице
+if (document.querySelector('.portfolio-slider__slider')) {
+    new Swiper('.portfolio-slider__slider', {
+        observer: true,
+        observeParents: true,
+        slidesPerView: 2.8,
+        spaceBetween: 32,
+        centeredSlides: true,
+        watchOverflow: true,
+        speed: 800,
+        loop: true,
+        loopAdditionalSlides: 5,
+        preloadImages: false,
+
+        // Arrows
+        navigation: {
+            nextEl: '.slider-arrow_next',
+            prevEl: '.slider-arrow_prev',
+        },
+
+        // Автопрокрутка
+        // autoplay: {
+        //     delay: 1500,
+        //     disableOnInteraction: false
+        // },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            472: {
+                slidesPerView: 1.2,
+            },
+            472: {
+                slidesPerView: 1.4,
+            },
+            768: {
+                slidesPerView: 1.5,
+            },
+            920: {
+                slidesPerView: 1.3,
+            },
+            998: {
+                slidesPerView: 1.6,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+            1500: {
+                slidesPerView: 2.8,
+            },
         }
     });
 }

@@ -32,6 +32,7 @@
     &__item {
         display: none;
         min-height: 492px;
+        height: 100%;
         width: 100%;
         background: linear-gradient(to bottom, rgba(178,178,178,1) 0%,rgba(53,47,47,.3) 100%);
     }
@@ -69,6 +70,7 @@
 
     &__img {
         width: 100%;
+        object-fit: cover;
         border-radius: 7px;
     }
 

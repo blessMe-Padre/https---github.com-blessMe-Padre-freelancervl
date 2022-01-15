@@ -5,9 +5,10 @@
 }
 
 .load-more__btn {
+	display: inline-flex;
 	line-height: 50px;
 	height: 50px;
-	text-align: center;
+	justify-content: center;
 	width: 250px;
 	cursor: pointer;
     background-color: inherit;
