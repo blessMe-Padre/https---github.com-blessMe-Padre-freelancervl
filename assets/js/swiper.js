@@ -254,10 +254,10 @@ if (document.querySelector('.portfolio-slider__slider')) {
         },
 
         // Автопрокрутка
-        // autoplay: {
-        //     delay: 1500,
-        //     disableOnInteraction: false
-        // },
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false
+        },
 
         breakpoints: {
             320: {
