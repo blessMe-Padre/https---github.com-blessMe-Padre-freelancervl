@@ -79,25 +79,22 @@
         font-size: 72px;
         line-height: 1;
         margin-bottom: 20px;
+        @include adaptiv-value("font-size", 72, 36, 1);
+
         @media (max-width: 540px) {
-            font-size: 64px;
             margin-bottom: 30px;
-        }
-        @media (max-width: 420px) {
-            font-size: 46px;
         }
     }
 
     // .main__sub-title
 
     &__sub-title {
-        font-size: 36px;
+        @include adaptiv-value("font-size", 36, 22, 1);
         margin-bottom: 100px;
         @media (max-width: 540px) {
             line-height: 1.2;
         }
         @media (max-width: 420px) {
-            font-size: 30px;
             margin-bottom: 40px;
         }
     }
