@@ -1,0 +1,69 @@
+---
+layout: default
+title: Freelancervl.ru
+---
+<h1 class="visually-hidden">Страница с демонстрационными секциями номер 4.</h1>
+
+<section class="todo page_section_1">
+    <h1 class="todo__title">Список дел</h1>
+    <ul class="todo__title-list">
+        <li class="todo__title-item">1. Задача считается выполненной и исчезает, если юзер кликнул по чекбоксу</li>
+        <li class="todo__title-item">2. Если все задачи выполнены, появляется сообщение, что больше задач нет</li>
+        <li class="todo__title-item">3. Если в пустой список добавляется новая задача, сообщение исчезает</li>
+        <li class="todo__title-item">4. Чтобы добавить новую задачу, надо ввести описание в поле ввода и нажать
+            «Добавить
+            задачу», задача появится в
+            конце списка</li>
+    </ul>
+    <div class="todo-wrapper">
+        <ul class="todo-list">
+            <li class="todo-list-item">
+                <label>
+                    <input class="todo-list-input" type="checkbox">
+                    <span>Задача номер 1</span>
+                </label>
+            </li>
+            <li class="todo-list-item">
+                <label>
+                    <input class="todo-list-input" type="checkbox">
+                    <span>Задача номер 2</span>
+                </label>
+            </li>
+            <li class="todo-list-item">
+                <label>
+                    <input class="todo-list-input" type="checkbox">
+                    <span>Задача номер 3</span>
+                </label>
+            </li>
+        </ul>
+        <p class="empty-tasks hidden">Все задачи выполнены. Новых задач нет.</p>
+        <form class="add-form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <input class="add-form-input" type="text" aria-label="Описание задачи"
+                placeholder="Например, покормить кота" required>
+            <button class="add-form-button" type="submit">Добавить задачу</button>
+        </form>
+
+        <template id="task-template">
+            <li class="todo-list-item">
+                <label>
+                    <input type="checkbox" class="todo-list-input">
+                    <span></span>
+                </label>
+            </li>
+        </template>
+    </div>
+</section>
+
+<div class="row add-bottom">
+    <div class="twelve columns add-bottom">
+        <nav class="pagination add-bottom">
+            <a href="block-02.html" class="page-numbers prev">Prev</a>
+            <a href="block-01.html" class="page-numbers">1</a>
+            <a href="block-02.html" class="page-numbers">2</a>
+            <a href="block-03.html" class="page-numbers">3</a>
+            <span class="page-numbers current">4</span>
+            <a href="#" class="page-numbers  inactive">Next</a>
+        </nav>
+    </div>
+    <hr />
+</div>
