@@ -1,0 +1,21 @@
+.workin {
+    padding: 100px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.workin__title {
+    color: black;
+    @include adaptiv-value("font-size", 48, 30, 1);
+    margin-bottom: 40px;
+}
+
+.workin__img {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.workin__img img {
+    width: 100%;
+    height: auto;
+}
