@@ -11,23 +11,22 @@
 /*================================================================*/
 
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
 
-/*ОБОЛОЧКА===========================================================================================================*/
 .wrapper {
 	background-color: #352F2F;
 	color: #fff;
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .main {
@@ -47,12 +46,15 @@
 	margin: 0 auto;
 	padding: 0 15px;
 	width: 100%;
+
 	@media (max-width: $md1) {
 		max-width: 970px;
 	}
+
 	@media (max-width: $md2) {
 		max-width: 750px;
 	}
+
 	@media (max-width: $md3) {
 		max-width: none;
 		padding: 0 10px;
@@ -63,17 +65,17 @@
 
 ._ibg {
 	position: relative;
-  }
+}
 
-  ._ibg img {
+._ibg img {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	-o-object-fit: cover;
-	   object-fit: cover;
-  }
+	object-fit: cover;
+}
 
 @import "blocks/mixin";
 @import "blocks/scrollbar";
