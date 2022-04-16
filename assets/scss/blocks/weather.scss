@@ -1,0 +1,45 @@
+.weather {
+    background-color: $darkGrayColor;
+    color: $white;
+    padding: 0 15px;
+    @include adaptiv-value("padding-top", 100, 35, 1);
+    @include adaptiv-value("padding-bottom", 100, 35, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather h2 {
+    @include adaptiv-value("font-size", 50, 35, 1);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.weather__descriptions {
+    @include adaptiv-value("font-size", 18, 14, 1);
+    line-height: 140%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.weather__card {
+    border: 2px solid $orangeColor;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: center;
+}
+
+.weather__city-name {
+    @include adaptiv-value("font-size", 24, 16, 1);
+    margin-bottom: 10px;
+}
+
+.weather__temp {
+    @include adaptiv-value("font-size", 72, 24, 1);
+    margin-bottom: 30px;
+}
+
+.weather__humidity {
+    margin-bottom: 10px;
+}
