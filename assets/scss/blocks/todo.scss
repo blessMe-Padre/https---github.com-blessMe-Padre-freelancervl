@@ -1,31 +1,31 @@
 .todo {
-    padding: 100px 15px;
-    background-color: $greylow;
+  padding: 100px 15px;
+  background-color: $greylow;
 }
 
 .todo__title-list {
-    @include adaptiv-value("padding-left", 100, 15, 1);
-    margin-bottom: 40px;
+  @include adaptiv-value("padding-left", 100, 15, 1);
+  margin-bottom: 40px;
 }
 
 .todo__title-item {
-    font-size: 20px;
-    list-style: square outside;
-    margin-bottom: 15px;
+  font-size: 20px;
+  list-style: square outside;
+  margin-bottom: 15px;
 }
 
 .todo__title {
-    @include adaptiv-value("font-size", 50, 35, 1);
-    line-height: 1.2;
-    text-align: center;
-    padding: 0 15px;
-    margin-bottom: 20px;
+  @include adaptiv-value("font-size", 50, 35, 1);
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 20px;
 }
 
 .todo-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .todo-list-input {
@@ -56,11 +56,12 @@
   min-width: 600px;
   max-width: 600px;
   color: #000000;
-        @media (max-width: 768px) {
-            min-width: 100%;
-            max-width: 100%;
-            margin-bottom: 30px;
-    }
+
+  @media (max-width: 768px) {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .todo-list-item {
@@ -85,7 +86,7 @@
   align-items: center;
 }
 
-.todo-list-input + span::before {
+.todo-list-input+span::before {
   content: "";
 
   display: inline-block;
@@ -100,14 +101,14 @@
   border-radius: 4px;
 }
 
-.todo-list-input:checked + span::before {
+.todo-list-input:checked+span::before {
   background-color: #69b253;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.todo-list-input:not(:checked):hover + span::before,
-.todo-list-input:not(:checked):focus + span::before {
+.todo-list-input:not(:checked):hover+span::before,
+.todo-list-input:not(:checked):focus+span::before {
   background-color: rgba(105, 178, 83, 0.2);
 }
 
@@ -128,11 +129,12 @@
   display: flex;
   min-width: 600px;
   max-width: 600px;
-      @media (max-width: 768px) {
-        flex-direction: column;
-        min-width: 100%;
-        max-width: 100%;
-    }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 
 .add-form-input {
@@ -148,9 +150,9 @@
   border-radius: 4px;
 
   @media (max-width: 768px) {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .add-form-input:focus {
@@ -179,7 +181,7 @@
 
   user-select: none;
   touch-action: manipulation;
-  transition: all 0.2   s ease-in;
+  transition: all 0.2 s ease-in;
 }
 
 .add-form-button:hover,
