@@ -7,7 +7,6 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Vladivostok,Ru&appid=c7
         // api возвращает температуру в фарингейтах, поэтому нужно перевести в цельции (-273 и округлить с помощью Math.round)
         document.querySelector('.weather__temp').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
 
-
         // получаем описание облачности
         document.querySelector('.weather__cloud').textContent = data.weather[0]
         ['description'];
