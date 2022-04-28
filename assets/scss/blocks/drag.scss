@@ -1,0 +1,46 @@
+.drag {
+    padding: 100px 0;
+}
+
+.drag h2 {
+    @include adaptiv-value("font-size", 50, 25, 1);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.drag__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drag__item {
+    min-height: 200px;
+    width: 200px;
+    border: 2px solid $orange;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.drag__card {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: $grayColor;
+    height: 100%;
+    cursor: all-scroll;
+}
+
+.drag--hide {
+    display: none;
+}
+
+.drag--hovered {
+    background-color: #616161;
+    box-shadow: 0 0 10px $orange;
+}
