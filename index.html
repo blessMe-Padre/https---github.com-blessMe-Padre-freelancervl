@@ -11,7 +11,7 @@ title: Главная
         </picture>
 
     </div>
-    <h1 class="main-section__title">Junior frontend разработчик</h1>
+    <h1 class="main-section__title">Frontend разработчик</h1>
     <p class="main-section__sub-title">
         Верстаю семантично, доступно, кроссбраузерно.
     </p>
@@ -19,6 +19,9 @@ title: Главная
         <a href="mailto:zaridony@yandex.ru" class="main-section__link" target="blank">zarodiny@yandex.ru</a>
         <a href="https://t.me/subbotinSegrey" class="main-section__link" target="blank">telergam</a>
         <a href="https://vk.com/id208128080" class="main-section__link" target="blank">Вконтакте</a>
+    </p>
+    <p class="main-section__links">
+        <a href="./assets/pdf.txt" download="Cубботин С.Ю. резюме" class="main-section__link">Скачать резюме PDF</a>
     </p>
 </section>
 
@@ -52,8 +55,8 @@ title: Главная
                 <div class="face face2">
                     <div class="content">
                         <p>Javascript ES6</p>
+                        <p>React</p>
                         <p>JQuery</p>
-                        <p>API</p>
                         <p>Комментируемый код</p>
                         <p>Плагины js</p>
                         <a class="alert" href="#">Подробнее</a>
@@ -72,8 +75,8 @@ title: Главная
                             Таск-менеджер Gulp
                         </p>
                         <p>Система управления версиями Git</p>
+                        <p>Pug</p>
                         <p>Графический редактор Figma</p>
-                        <p>W3C и БЭМ валидаторы</p>
                         <p>Типограф для подготовки текстов</p>
                         <a class="alert" href="#">Подробнее</a>
                     </div>
@@ -138,17 +141,17 @@ title: Главная
             </div>
             <div class="portfolio-slider__item">
                 <div class="portfolio-slider__slide">
-                    <a href="nerds.html" class="portfolio-card__link">
+                    <a href="fitness.html" class="portfolio-card__link">
                         <picture>
                             <source
-                                srcset="assets/images/portfolio/nerds-350.webp 1x, assets/images/portfolio/nerds-350@2x.webp 2x"
+                                srcset="assets/images/portfolio/fitness-350.webp 1x, assets/images/portfolio/fitness-350@2x.webp 2x"
                                 type="image/webp">
-                            <img class="portfolio-card__img" src="assets/images/portfolio/nerds-350.jpg" width="350"
-                                height="595" srcset="assets/images/portfolio/nerds-350@2x.jpg 2x" alt="кексограм">
+                            <img class="portfolio-card__img" src="assets/images/portfolio/fitness-350.jpg" width="350"
+                                height="595" srcset="assets/images/portfolio/fitness-350@2x.jpg 2x" alt="fitness">
                         </picture>
                         <div class="portfolio-card__description">
-                            <h3 class="portfolio-card__description-title">Nerds</h3>
-                            <p class="portfolio-card__description-text">Сайт дизайн студии из Краснодара</p>
+                            <h3 class="portfolio-card__description-title">Фитнес центр</h3>
+                            <p class="portfolio-card__description-text">лендинг фитнес центра</p>
                         </div>
                     </a>
                 </div>
@@ -185,10 +188,30 @@ title: Главная
             <section class="updates">
                 <h2 class="updates__title">Обновления:</h2>
                 <div class="updates__block">
+                    <p class="updates__date">16.05.22</p>
+                    <ul class="updates__list">
+                        <li class="updates__item">
+                            Добавлены новые ссылки в полезные ресурсы.
+                        </li>
+                        <li class="updates__item">
+                            Добавлен новый проект в слайдер на главной странице.
+                        </li>
+                        <li class="updates__item">
+                            Добавлена ссылка на скачивание резюме.
+                        </li>
+                    </ul>
+                </div>
+                <div class="updates__block">
                     <p class="updates__date">03.05.22</p>
                     <ul class="updates__list">
                         <li class="updates__item">
                             На первой и второй странице в разделе "секции" изображения теперь webp.
+                        </li>
+                        <li class="updates__item">
+                            Для кнопок и ссылок, которые никуда не ведут, добавлены попап заглушки sweetalert.
+                        </li>
+                        <li class="updates__item">
+                            Дабавлен кастомный скроллбар на CSS.
                         </li>
                     </ul>
                 </div>
