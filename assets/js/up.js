@@ -19,7 +19,6 @@
 // }
 
 // backToTop();
-
 //JS
 const scrollBtn = document.querySelector('.back-to-top');
 window.onscroll = () => {
