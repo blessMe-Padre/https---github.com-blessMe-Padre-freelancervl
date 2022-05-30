@@ -255,7 +255,7 @@ if (document.querySelector('.portfolio-slider__slider')) {
 
         // Автопрокрутка
         autoplay: {
-            delay: 1500,
+            delay: 2500,
             disableOnInteraction: false
         },
 
