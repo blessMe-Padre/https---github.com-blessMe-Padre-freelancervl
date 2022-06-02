@@ -1,6 +1,7 @@
 body.lock {
 	overflow: hidden;
 }
+
 .popup {
 	position: fixed;
 	width: 100%;
@@ -15,10 +16,12 @@ body.lock {
 	transition: all 0.8s ease 0s;
 	z-index: 50;
 }
+
 .popup.open {
 	opacity: 1;
 	visibility: visible;
 }
+
 .popup.open .popup__content {
 	transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
 	opacity: 1;
@@ -40,6 +43,7 @@ body.lock {
 	padding: 30px 10px;
 	transition: all 0.8s ease 0s;
 }
+
 .popup__content {
 	background-color: $grey;
 	color: #fff;
@@ -50,22 +54,26 @@ body.lock {
 	opacity: 0;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 	border: 1px solid $orange;
-    border-radius: 5px;
+	border-radius: 5px;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .popup__close {
 	position: absolute;
-    width: 20px;
-    height: 20px;
+	width: 20px;
+	height: 20px;
 	right: 10px;
 	top: 10px;
-    text-decoration: none;
-    background-color: $grey;
-    transition: all 0.2s ease 0s;
+	text-decoration: none;
+	background-color: $grey;
+	transition: all 0.2s ease 0s;
 }
+
 .popup__close:hover {
-    transform: rotate(90deg);
+	transform: rotate(90deg);
 }
+
 .popup__title {
 	font-size: 40px;
 	margin: 0px 0px 1em 0px;
