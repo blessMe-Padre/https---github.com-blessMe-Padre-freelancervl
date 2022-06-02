@@ -1,13 +1,14 @@
 const weatherSection = document.querySelector('.weather');
 
 if (weatherSection) {
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=Vladivostok,Ru&appid=c7b93658ce3f57848c36f2acf59dae7f', {
-        credentials: 'same-origin'
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=Vladivostok,Ru&appid=800e89b2b02c6374ced6902fed3e1e60', {
+        method: 'GET',
+        redirect: 'follow',
     })
 
         .then(function (resp) { return resp.json() })
         .then(function (data) {
-            console.log(data);
+            // console.log(data);
             document.querySelector('.weather__city-name').textContent = data.name;
 
             // api возвращает температуру в фарингейтах, поэтому нужно перевести в цельции (-273 и округлить с помощью Math.round)

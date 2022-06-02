@@ -130,6 +130,7 @@ window.onload = function () {
             }
         });
         // функция показывающая результат опроса
+
         function showResult() {
             let key = Object.keys(result).reduce(function (a, b) {
                 return result[a] > result[b] ? a : b;
