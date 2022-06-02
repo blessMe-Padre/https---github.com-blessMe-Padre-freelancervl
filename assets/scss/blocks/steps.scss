@@ -1,5 +1,12 @@
 .steps {
-    padding: 80px 0;
+    padding: 150px 0;
+    background-color: #433B3B;
+}
+
+.steps h2 {
+    @include adaptiv-value("font-size", 50, 25, 1);
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .steps__progress {
@@ -22,10 +29,21 @@
 
 .steps__numbers {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 100px;
     position: relative;
     max-width: 650px;
+
+    @media (max-width: 767px) {
+        max-width: 450px;
+        gap: 50px;
+    }
+
+    @media (max-width: 460px) {
+        max-width: 320px;
+        gap: 30px;
+    }
 }
 
 .step__number {
@@ -39,6 +57,11 @@
     background: #352F2F;
     z-index: 1;
     transition: all 0.6s ease;
+
+    @media (max-width: 460px) {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .step__number--active {
@@ -50,10 +73,30 @@
     display: none;
     padding: 50px 0;
     min-height: 200px;
-    text-align: center;
     font-size: 72px;
 }
 
 .steps__item.active {
     display: block;
+}
+
+.step__button {
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    min-width: 120px;
+    color: white;
+    background-color: $orange;
+    font-family: inherit;
+    font-size: 16px;
+    margin-right: 30px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($orange, 10%);
+    }
+
+    @media (max-width: 460px) {
+        margin-right: 20px
+    }
 }

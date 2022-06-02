@@ -4,7 +4,9 @@
 }
 
 .todo__title-list {
-  @include adaptiv-value("padding-left", 100, 15, 1);
+  width: 700px;
+  margin: 0 auto;
+  @include adaptiv-value("padding-left", 45, 15, 1);
   margin-bottom: 40px;
 }
 
