@@ -1,5 +1,6 @@
 const weatherSection = document.querySelector('.weather');
 
+
 if (weatherSection) {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=Vladivostok,Ru&appid=800e89b2b02c6374ced6902fed3e1e60', {
         method: 'GET',
@@ -25,7 +26,7 @@ if (weatherSection) {
             document.querySelector('.weather__humidity').innerHTML = `Влажность ${data.main.humidity}%`;
 
             // получаем скорость ветра
-            document.querySelector('.weather__wind').textContent = `Cкорость ветра ${data.wind.speed} м/с`;
+            document.querySelector('.weather__wind').textContent = `Скорость ветра ${data.wind.speed} м/с`;
 
         })
         .catch(function () {

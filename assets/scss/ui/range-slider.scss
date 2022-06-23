@@ -1,0 +1,269 @@
+$breakpoint-mobile: 320px;
+$breakpoint-mobile-only: 767px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1220px;
+$max-screen-width: 1300px;
+
+@mixin mobile-only {
+    @media (max-width: $breakpoint-mobile-only) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) {
+        // min-width: 768
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $breakpoint-desktop) {
+        // min-width: 1220
+        @content;
+    }
+}
+
+//--------------range----------------
+$track-color: #dcdcdc;
+$thumb-color: #68b738;
+
+$thumb-radius: 50%;
+$thumb-height: 32px;
+$thumb-width: 32px;
+$thumb-border-width: 12px;
+$thumb-border-color: #fff;
+
+$track-width: 428px;
+$track-height: 6px;
+$track-border-width: 0;
+$track-border-color: transparent;
+$track-radius: 3px;
+
+@mixin track() {
+    width: $track-width;
+    height: $track-height;
+    cursor: pointer;
+}
+
+@mixin thumb() {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+    border: $thumb-border-width solid $thumb-border-color;
+    height: $thumb-height;
+    width: $thumb-width;
+    border-radius: $thumb-radius;
+    background: $thumb-color;
+    cursor: pointer;
+    box-sizing: border-box;
+    appearance: none;
+}
+
+.range {
+    display: none;
+    background: transparent;
+
+    @include tablet {
+        display: block;
+    }
+
+    width: $track-width;
+    appearance: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-slider-runnable-track {
+        @include track();
+        background: $track-color;
+        border-radius: $track-radius;
+        border: $track-border-width solid $track-border-color;
+    }
+
+    &::-webkit-slider-thumb {
+        @include thumb();
+        margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-height / 2);
+    }
+
+    //----------------------------------
+
+    &:focus::-webkit-slider-thumb,
+    &:hover::-webkit-slider-thumb {
+        box-shadow:
+            0 0 0 1px rgba(0, 0, 0, 0.15),
+            0 2px 5px 1px rgba(0, 0, 0, 0.15),
+            0 3px 5px 1px rgba(0, 0, 0, 0.15),
+            0 4px 5px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active::-webkit-slider-thumb {
+        box-shadow:
+            0 0 0 2px $thumb-color,
+            0 2px 5px 1px rgba(0, 0, 0, 0.15),
+            0 3px 5px 1px rgba(0, 0, 0, 0.15),
+            0 4px 5px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    //--------------------------------
+
+    &::-moz-range-track {
+        @include track();
+        background: $track-color;
+        border-radius: $track-radius;
+        border: $track-border-width solid $track-border-color;
+    }
+
+    &::-moz-range-thumb {
+        @include thumb();
+    }
+
+    &::-ms-track {
+        @include track();
+        background: transparent;
+        border-color: transparent;
+        border-width: $thumb-width 0;
+        color: transparent;
+    }
+
+    &::-ms-fill-lower {
+        border: $track-border-width solid $track-border-color;
+        border-radius: $track-radius * 2;
+    }
+
+    &::-ms-fill-upper {
+        background: $track-color;
+        border: $track-border-width solid $track-border-color;
+        border-radius: $track-radius * 2;
+    }
+
+    &::-ms-thumb {
+        @include thumb();
+    }
+
+    &:focus::-ms-fill-lower {
+        background: $track-color;
+    }
+}
+
+//--------------slider----------------
+
+.slider__button {
+    width: 50px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-top: 6px;
+        padding-left: 3px;
+        padding-right: 3px;
+        border-bottom: 1px dotted rgba(17, 17, 17, 0.23);
+    }
+}
+
+.slider__button--before {
+    margin-right: 12px;
+    text-align: right;
+
+    @include tablet {
+        width: 54px;
+        margin-right: 0;
+    }
+}
+
+.slider__button--after {
+    margin-left: 12px;
+    text-align: left;
+
+    @include tablet {
+        width: 59px;
+        margin-left: 0;
+    }
+}
+
+.slider__range {
+    margin-left: 22px;
+    margin-right: 22px;
+
+    @include tablet {
+        width: 428px;
+        margin-left: 21px;
+        margin-right: 19px;
+    }
+
+    @include desktop {
+        margin-left: 23px;
+        margin-right: 16px;
+    }
+}
+
+.slider__toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include tablet {
+        width: auto;
+        padding-left: 1px;
+        margin-top: 20px;
+        margin-bottom: 38px;
+    }
+
+    @include desktop {
+        margin-top: 20px;
+    }
+}
+
+.slider__checkbox {
+    display: none;
+}
+
+.slider__checkbox-label {
+    position: relative;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 84px;
+    height: 14px;
+    border-radius: 6px;
+    border: solid 1px #cdcdcd;
+    background-color: rgb(255, 255, 255);
+    display: block;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.slider__checkbox-label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #68b738;
+    transition: width 0.3s;
+}
+
+.slider__checkbox:checked+.slider__checkbox-label::after {
+    right: 6px;
+    left: initial;
+}
+
+.slider__checkbox-label:active::after {
+    width: 80%;
+}

@@ -1,0 +1,87 @@
+---
+layout: block-layout
+title: Freelancervl.ru
+---
+<h1 class="visually-hidden">Страница с демонстрационными секциями номер 5.</h1>
+
+<section class="start">
+    <div class="container">
+        <div class="start__inner">
+
+            <h3 class="start__title _anim-items _anim-no-hide">
+                Добро пожаловать на страницу блоков.
+            </h3>
+            <p class="start__text _anim-items _anim-no-hide">
+                В этом разделе представлены готовые решения, элементы и анимация.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="before-after">
+    <div class="container">
+        <div class="before-after__slider">
+            <div class="before-after__before">
+                <img src="./assets/images/before-after/cat-fat.jpg" alt="cat-fat">
+            </div>
+            <div class="before-after__after">
+                <img src="./assets/images/before-after/cat-skinny.jpg" alt="cat-skinny.jpg">
+            </div>
+            <div class="before-after__change"></div>
+        </div>
+        <div class="slider__pictures">
+            <div class="slider__toggle">
+                <button class="slider__button slider__button--before">Было</button>
+                <input id="slider" class="slider__range range" type="range" min="0" max="100" value="50"
+                    aria-label="  переключения слайдера" />
+                <input type="checkbox" class="slider__checkbox" id='slider-checkbox'>
+                <label class="slider__checkbox-label" for="slider-checkbox">Переключение слайдера</label>
+                <button class="slider__button slider__button--after">Стало</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="workin">
+    <div class="container">
+        <h1 class="workin__title">Следующая секция еще не завершена</h1>
+        <div class="workin__img">
+            <picture>
+                <source srcset="assets/images/work.webp 1x, assets/images/work@2x.webp 2x" type="image/webp">
+                <img class="" src="assets/images/work.jpg" width="600" height="300"
+                    srcset="assets/images/work@2x.jpg 2x" alt="work in progress">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<div class="row add-bottom">
+    <div class="twelve columns add-bottom">
+        <nav class="pagination add-bottom">
+            <a href="block-02.html" class="page-numbers prev">Prev</a>
+            <a href="block-01.html" class="page-numbers">1</a>
+            <a href="block-02.html" class="page-numbers">2</a>
+            <a href="block-03.html" class="page-numbers">3</a>
+            <a href="block-04.html" class="page-numbers">4</a>
+            <span class="page-numbers current">5</span>
+            <span class="page-numbers inactive">Next</span>
+        </nav>
+    </div>
+    <hr />
+</div>
+
+<!-- <div id="disqus_thread"></div>
+<script>
+
+    var disqus_config = function () {
+        this.page.url = 'https://www.freelancervl.ru/block-04.html';
+        this.page.identifier = '/block-04.html';
+    };
+
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://freelancervl.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script> -->
