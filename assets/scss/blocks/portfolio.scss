@@ -30,14 +30,18 @@
     // .portfolio__item
 
     &__item {
-        display: none;
+        display: block;
         min-height: 492px;
         height: 100%;
         width: 100%;
-        background: linear-gradient(to bottom, rgba(178,178,178,1) 0%,rgba(53,47,47,.3) 100%);
+        background: linear-gradient(to bottom, rgba(178, 178, 178, 1) 0%, rgba(53, 47, 47, .3) 100%);
     }
 
-    &__item--visible {
+    &__item:nth-child(n+7) {
+        display: none;
+    }
+
+    &__item.is-visible {
         display: block;
     }
 }
@@ -49,19 +53,19 @@
     &__link {
         position: relative;
         display: block;
-        box-shadow: 0 0 5px 2px rgb(230,157,0);
+        box-shadow: 0 0 5px 2px rgb(230, 157, 0);
         border-radius: 4px;
         transition-duration: 500ms;
         width: 100%;
     }
 
     &__link:hover {
-        box-shadow: 0 5px 15px 3px rgb(230,157,0);
+        box-shadow: 0 5px 15px 3px rgb(230, 157, 0);
         transform: translateY(-10px);
     }
 
     &__link:focus {
-        box-shadow: 0 5px 15px 3px rgb(230,157,0);
+        box-shadow: 0 5px 15px 3px rgb(230, 157, 0);
         transform: translateY(-10px);
         outline: none;
     }
@@ -89,11 +93,12 @@
         padding: 15px 40px;
         box-sizing: border-box;
         text-align: center;
-        background: linear-gradient(to bottom, rgba(178,178,178,1) 0%,rgba(53,47,47,.3) 100%);
+        background: linear-gradient(to bottom, rgba(178, 178, 178, 1) 0%, rgba(53, 47, 47, .3) 100%);
         opacity: 0;
         transition-duration: 500ms;
         border-radius: 4px;
     }
+
     &__description:hover {
         opacity: 1;
     }
@@ -105,6 +110,7 @@
         text-shadow: 2px 2px 3px black;
         margin-bottom: 40px;
     }
+
     &__description-text {
         font-size: 18px;
         text-shadow: 2px 2px 3px black;
