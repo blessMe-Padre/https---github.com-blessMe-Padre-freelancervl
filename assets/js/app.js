@@ -73,6 +73,7 @@ if (menuLinks.length > 0) {
     }
 }
 
+
 //Меню бургер
 
 const iconMenu = document.querySelector('.menu__icon');
