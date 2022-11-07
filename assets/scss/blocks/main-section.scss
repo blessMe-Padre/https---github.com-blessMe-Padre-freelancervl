@@ -22,7 +22,7 @@
     &__img img {
         display: block;
         width: 100%;
-        height: auto;
+        height: 102%;
         border-radius: 50%;
         object-fit: contain;
     }
@@ -70,8 +70,9 @@
     &__img img {
         display: block;
         width: 100%;
-        height: auto;
+        height: 101%;
         border-radius: 50%;
+        object-fit: cover;
     }
 
     // .main__title
