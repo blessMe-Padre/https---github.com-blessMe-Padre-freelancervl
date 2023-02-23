@@ -14,6 +14,7 @@ document.querySelectorAll('.mavic__item-title').forEach((item) =>
 
     })
 )
+
 document.querySelectorAll('.criteria-body__item-title').forEach((item) =>
     item.addEventListener('click', () => {
         const parent = item.parentNode;

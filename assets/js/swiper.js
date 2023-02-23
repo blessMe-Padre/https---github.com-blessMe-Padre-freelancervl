@@ -240,11 +240,10 @@ if (document.querySelector('.portfolio-slider__slider')) {
         observeParents: true,
         slidesPerView: 2.8,
         spaceBetween: 32,
-        centeredSlides: true,
+        // centeredSlides: true,
         watchOverflow: true,
         speed: 800,
-        loop: true,
-        loopAdditionalSlides: 5,
+        // loop: true,
         preloadImages: false,
 
         // Arrows
@@ -254,10 +253,10 @@ if (document.querySelector('.portfolio-slider__slider')) {
         },
 
         // Автопрокрутка
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false
-        },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false
+        // },
 
         breakpoints: {
             320: {
